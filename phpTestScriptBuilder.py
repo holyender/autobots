@@ -3,13 +3,16 @@ import random
 def phptestbuilder(file):
 	f = open(file, "r")
 	for line in f:
-		#print(line)
-		editlist.append(line.lstrip())
+		if "URL:" in line:
+			print(line +"\n")
+		else:
+			#print(line)
+			editlist.append(line.rstrip("\n"))
 
 def buildphpline(line):
 	#print(type(line))
 	linelist = line.split(", ")
-	linelist[1] = linelist[1].strip("\n")
+	#linelist[1] = linelist[1].strip("\n")
 	print(linelist)
 	return linelist
 
@@ -50,6 +53,12 @@ def phpCodeParser(a):
 	if 'form-submit' in a[0] and 'continue' in a[1]:
 		phpCodeList.append("$I->click('#" + a[1] + "');")
 
+def phpUrlParser(URL):
+	urlList = URL.split("/")
+	#for i in urlList:
+		#print(i)
+
+
 randnum = random.randrange(1,40000)
 randUser = str(randnum)
 
@@ -68,16 +77,25 @@ state = "New York"
 formselect = "Dr."
 
 
-editlist = []
-phptestbuilder("idlist.txt")
 
-phpCodeList= []
 
-for i in editlist:
-	#print(i)
-	linelist = buildphpline(i)
-	phpCodeParser(linelist)
+num_lines = sum(1 for line in open('inputurl.txt'))
 
-for i in phpCodeList:
-	print(i)
+for i in range(num_lines):
+	editlist = []
+	URL = ""
+	phptestbuilder("idlist" + str(i+1) + ".txt")
+
+	phpCodeList = []
+	print(URL)
+	phpUrlParser(URL)
+
+	for i in editlist:
+		#print(i)
+		linelist = buildphpline(i)
+		#linelist = filter(None, linelist)
+		phpCodeParser(linelist)
+
+	for i in phpCodeList:
+		print(i)
 

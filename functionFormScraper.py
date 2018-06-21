@@ -90,9 +90,10 @@ def fromFile(filename):
 
 
 def toFile(outList):
-	f = open("idlist.txt","w")
+	f = open("idlist" + str(tmp) + ".txt","w")
+	f.write("URL:" + testurl)
+	#f.write("")
 	for i in outList:
-
 		f.write(', '.join(i) + "\n")
 
 	f.close()
@@ -100,7 +101,9 @@ def toFile(outList):
 
 
 f = open(sys.argv[1], 'r')
+tmp = 1
 for line in f:
+	
 	testurl = line
 
 	#testurl = "https://911memorial.org/join/individual"
@@ -111,7 +114,7 @@ for line in f:
 	outList = parseClassId(classID)
 
 	toFile(outList)
-
+	tmp +=1
 	print('\n')
 	print(testurl + '\n')
 	for i in outList:
