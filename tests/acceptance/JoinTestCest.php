@@ -36,7 +36,7 @@ class JoinTestCest
     	$I->click('Sign up');
     	$I->amOnPage('/join/patron');
 
-        $I->fillField('#edit-join-account-account-mail', 'jointest'.$tmp.''@jointest.com');
+        $I->fillField('#edit-join-account-account-mail', 'jointest'.$tmp.'@jointest.com');
         $I->fillField('#edit-join-account-account-user-pass-pass1', 'testregisterPassword');
         $I->fillField('#edit-join-account-account-user-pass-pass2', 'testregisterPassword');
         $I->fillField('#edit-profile-main-field-profile-first-name-und-0-value', 'FN'.$tmp.'');
