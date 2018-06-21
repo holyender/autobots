@@ -1,7 +1,7 @@
 <?php
 
 
-class JoinTestCest
+class JoinTest2Cest
 {
     public function _before(AcceptanceTester $I)
     {
