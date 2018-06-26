@@ -31,11 +31,20 @@ def urlLink(url):
 	return tmplist[-1]
 
 scenarioScript = []
-f = open(sys.argv[1], 'r')
-for line in f:
-	sPiece =[]
-	scenarioParse(line)
-	scenarioScript.append(sPiece)
+
+with open(sys.argv[1], "r") as f:
+    names_list = [line.strip() for line in f if line.strip()]
+    for i in names_list:
+    	sPiece = []
+    	scenarioParse(i)
+    	scenarioScript.append(sPiece)
+
+#f = open(sys.argv[1], 'r')
+#for line in f:
+	#print(line)
+	#sPiece = []
+	#scenarioParse(line)
+	#scenarioScript.append(sPiece)
 
 f = open('scenarioScript', 'w')
 for i in scenarioScript:
