@@ -911,7 +911,9 @@
       "readyEvent": "",
       "readySelector": "",
       "delay": 0,
-      "hideSelectors": [],
+      "hideSelectors": [
+        "#block-bean-latest-tweets"
+      ],
       "removeSelectors": [],
       "hoverSelector": "",
       "clickSelector": "",

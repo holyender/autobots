@@ -24,3 +24,6 @@
 
         wait(10);
 
+
+jenkins folder
+/var/lib/jenkins/workspace/MostWantedBackstopTest/backstopjs/backstop_data/
