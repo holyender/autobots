@@ -532,7 +532,9 @@
       "readySelector": "",
       "delay": 0,
       "hideSelectors": [],
-      "removeSelectors": [],
+      "removeSelectors": [
+        "#field field-name-field-article-body field-type-text-long field-label-hidden"
+      ],
       "hoverSelector": "",
       "clickSelector": "",
       "postInteractionWait": 0,
