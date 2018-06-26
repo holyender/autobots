@@ -340,7 +340,7 @@
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
-      "delay": 0,
+      "delay": 5000,
       "hideSelectors": [],
       "removeSelectors": [],
       "hoverSelector": "",
