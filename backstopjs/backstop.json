@@ -913,13 +913,11 @@
       "delay": 0,
       "hideSelectors": [
         "#block-bean-latest-tweets",
-        "#twitter-timeline",
-        "Tweets by @Sept11Memorial"
+        "#twitter-timeline"
       ],
       "removeSelectors": [
         "#block-bean-latest-tweets",
-        "#twitter-timeline",
-        "Tweets by @Sept11Memorial"
+        "#twitter-timeline"
       ],
       "hoverSelector": "",
       "clickSelector": "",
