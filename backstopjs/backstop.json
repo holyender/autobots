@@ -533,7 +533,8 @@
       "delay": 0,
       "hideSelectors": [],
       "removeSelectors": [
-        "#field field-name-field-article-body field-type-text-long field-label-hidden"
+        "#field field-name-field-article-body field-type-text-long field-label-hidden",
+        "#iframe"
       ],
       "hoverSelector": "",
       "clickSelector": "",
