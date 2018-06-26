@@ -1,0 +1,1 @@
+ java -Dwebdriver.chrome.driver=/usr/ocal/share/chromedriver -jar "selenium-server-standalone-3.12.0.jar" -port 9515 &
