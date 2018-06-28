@@ -8,27 +8,37 @@ def __init__(self, filename):
 	self.url = url
 
 def scrap(url):
-	r = requests.get(url)
-	print(r)
+	#r = requests.get(url)
+	#print(r)
+
+	with open('gift_individual_member-card.html', 'r') as f:
+		data = f.read().replace('\n', '')
 
 
-	data = r.text
+	#print(data)
+	#data = r.text
 	#print(type(data))
 
-	soup = BeautifulSoup(data)
-	soup.prettify()
+		soup = BeautifulSoup(data, "html5lib")
+		soup.prettify()
 
+	#print("soup: ")
+	#print(soup)
 	#formid = soup.find_all('input', {'id': re.compile(r'edit')})
 	#print(formid)
-	print("\n")
+		print("\n")
 
-	scrapRes = soup.find_all('input', id = re.compile('edit')) + soup.find_all('select', id = re.compile('edit'))
-	
-	#for i in scrapRes:
-	#	print(i)
+		#scrapRes = soup.find_all('input', id = re.compile('edit')) + soup.find_all('select', id = re.compile('edit'))
+		scrapRes = soup.find_all(id = "edit-profile-main-field-profile-first-name-und-0-value")
+
+		for tag in soup.find_all(id = re.compile('edit')):
+			print(tag.name)
+
+		print(scrapRes)
+		print("\n")
 	#type(scrapRes)
 
-	return scrapRes
+		return scrapRes
 
 def findClassId(ret):
 	classIdList = []
@@ -103,25 +113,22 @@ def toFile(outList):
 
 
 
-f = open(sys.argv[1], 'r')
+
 tmp = 1
-for line in f:
-	
-	testurl = line
 
-	#testurl = "https://911memorial.org/join/individual"
-	scrapResult = scrap(testurl)
+testurl = "https://911memorial.org/join/individual"
+scrapResult = scrap(testurl)
+#print(scrapResult)
+classID = findClassId(scrapResult)
 
-	classID = findClassId(scrapResult)
+outList = parseClassId(classID)
 
-	outList = parseClassId(classID)
-
-	toFile(outList)
-	tmp +=1
-	print('\n')
-	print(testurl + '\n')
-	for i in outList:
-		print(i)
+toFile(outList)
+tmp +=1
+print('\n')
+print(testurl + '\n')
+for i in outList:
+	print(i)
 
 #testurl = "https://911memorial.org/join/individual"
 

@@ -4,31 +4,47 @@ import requests
 import sys
 from requests.auth import HTTPBasicAuth
 
-def __init__(self, filename):
-	self.url = url
+payload = {
+'edit-name': 'jointest16524@jointest.com',
+'edit-pass': 'testregisterPassword'
+}
 
 def scrap(url):
-	r = requests.get(url)
-	print(r)
+# Fill in your details here to be posted to the login form.
+
+	# Use 'with' to ensure the session context is closed after use.
+	with requests.Session() as s:
+		p = s.post('http://nineelevenmemorialstg.prod.acquia-sites.com/user', data=payload)
+	    # print the html returned or something more intelligent to see if it's a successful login page.
+		print(p.text)
+
+	    # An authorised request.
+		r = s.get('http://nineelevenmemorialstg.prod.acquia-sites.com/gift/individual/member-card')
+		print(r.text)
 
 
-	data = r.text
-	#print(type(data))
 
-	soup = BeautifulSoup(data)
-	soup.prettify()
+		r = requests.get(url)
+		print(r)
 
-	#formid = soup.find_all('input', {'id': re.compile(r'edit')})
-	#print(formid)
-	print("\n")
 
-	scrapRes = soup.find_all('input', id = re.compile('edit')) + soup.find_all('select', id = re.compile('edit'))
-	
-	#for i in scrapRes:
-	#	print(i)
-	#type(scrapRes)
+		data = r.text
+		type(data)
 
-	return scrapRes
+		soup = BeautifulSoup(data)
+		soup.prettify()
+
+		#formid = soup.find_all('input', {'id': re.compile(r'edit')})
+		#print(formid)
+		print("\n")
+
+		scrapRes = soup.find_all('input', id = re.compile('edit')) + soup.find_all('select', id = re.compile('edit'))
+		
+		#for i in scrapRes:
+		#	print(i)
+		#type(scrapRes)
+
+		return scrapRes
 
 def findClassId(ret):
 	classIdList = []
@@ -70,7 +86,7 @@ def parseClassId(classID):
 
 
 		elif 'form-submit' in i[0]:
-			
+
 			outList.append(['form-submit', i[1]])
 
 		else:
@@ -99,29 +115,29 @@ def toFile(outList):
 	for i in outList:
 		f.write(', '.join(i) + "\n")
 
-	f.close()
+		f.close()
 
 
 
-f = open(sys.argv[1], 'r')
+#f = open(sys.argv[1], 'r')
 tmp = 1
-for line in f:
-	
-	testurl = line
+#for line in f:
 
-	#testurl = "https://911memorial.org/join/individual"
-	scrapResult = scrap(testurl)
+	#testurl = line
 
-	classID = findClassId(scrapResult)
+testurl = "https://911memorial.org/gift/individual"
+scrapResult = scrap(testurl)
 
-	outList = parseClassId(classID)
+classID = findClassId(scrapResult)
 
-	toFile(outList)
-	tmp +=1
-	print('\n')
-	print(testurl + '\n')
-	for i in outList:
-		print(i)
+outList = parseClassId(classID)
+
+toFile(outList)
+tmp +=1
+print('\n')
+print(testurl + '\n')
+for i in outList:
+	print(i)
 
 #testurl = "https://911memorial.org/join/individual"
 

@@ -1,6 +1,8 @@
 <?php
 
 
+$renewTmp = "";
+
 class JoinTest2Cest
 {
     public function _before(AcceptanceTester $I)
@@ -25,12 +27,15 @@ class JoinTest2Cest
     {
     }
 
+
     public function individualtest(AcceptanceTester $I){
 
 
 
         //'.$tmp.' = rand(1,10000);
         $tmp = (string)rand(1,900000);
+
+        $renewTmp = $tmp;
 
     	$I->amOnPage('/');
     	$I->click('log in');
@@ -96,11 +101,25 @@ class JoinTest2Cest
 
         $I->see("Thank You");
 
+    }
 
+    public function individualrenewtest(AcceptanceTester $I){
 
+        $I->amOnPage('/');
+        $I->click('log in');
+        $I->wait(2);
+        $I->amOnPage('/user');
+        $I->fillField('#edit-name', 'jointest476423@jointest.com');
+        $I->fillField('#edit-pass', 'testregisterPassword');
+        $I->click('#edit-submit');
 
+        $I->wait(10);
 
     }
+
+
+
+
     public function dualtest(AcceptanceTester $I){
         $tmp = (string)rand(1,900000);
         $I->amOnPage('/');
