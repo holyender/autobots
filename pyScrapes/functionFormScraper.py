@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import re
 import requests
 import sys
+from requests.auth import HTTPBasicAuth
 
 def __init__(self, filename):
 	self.url = url
@@ -10,7 +11,9 @@ def scrap(url):
 	r = requests.get(url)
 	print(r)
 
+
 	data = r.text
+	type(data)
 
 	soup = BeautifulSoup(data)
 	soup.prettify()

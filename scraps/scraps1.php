@@ -27,3 +27,5 @@
 
 jenkins folder
 /var/lib/jenkins/workspace/MostWantedBackstopTest/backstopjs/backstop_data/
+
+##.slide-media.slide-video

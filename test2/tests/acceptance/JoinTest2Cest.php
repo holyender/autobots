@@ -30,7 +30,7 @@ class JoinTest2Cest
 
 
         //'.$tmp.' = rand(1,10000);
-        $tmp = (string)rand(1,50000);
+        $tmp = (string)rand(1,900000);
 
     	$I->amOnPage('/');
     	$I->click('log in');
@@ -102,7 +102,7 @@ class JoinTest2Cest
 
     }
     public function dualtest(AcceptanceTester $I){
-        $tmp = (string)rand(1,50000);
+        $tmp = (string)rand(1,900000);
         $I->amOnPage('/');
         $I->click('log in');
         $I->amOnPage('/user');
@@ -171,7 +171,7 @@ class JoinTest2Cest
 
     }
     public function familytest(AcceptanceTester $I){
-        $tmp = (string)rand(1,50000);
+        $tmp = (string)rand(1,900000);
         $I->amOnPage('/');
         $I->click('log in');
         $I->amOnPage('/user');
@@ -238,7 +238,7 @@ class JoinTest2Cest
 
     }
     public function visionarytest(AcceptanceTester $I){
-        $tmp = (string)rand(1,50000);
+        $tmp = (string)rand(1,900000);
         $I->amOnPage('/');
         $I->click('log in');
         $I->amOnPage('/user');
@@ -305,7 +305,7 @@ class JoinTest2Cest
 
     }
     public function contributortest(AcceptanceTester $I){
-        $tmp = (string)rand(1,50000);
+        $tmp = (string)rand(1,900000);
         $I->amOnPage('/');
         $I->click('log in');
         $I->amOnPage('/user');
@@ -372,7 +372,7 @@ class JoinTest2Cest
 
     }
     public function patrontest(AcceptanceTester $I){
-        $tmp= (string)rand(1,50000);
+        $tmp= (string)rand(1,900000);
         $I->amOnPage('/');
         $I->click('log in');
         $I->amOnPage('/user');
