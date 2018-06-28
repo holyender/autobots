@@ -1,0 +1,1 @@
+ssh -L 127.0.0.1:8080:localhost:8080 holyender@autobotsjenkins.eastus.cloudapp.azure.com
