@@ -1,0 +1,592 @@
+Script started on Fri 29 Jun 2018 03:51:20 PM UTC
+]0;holyender@autobot: ~/autobots[01;32mholyender@autobot[00m:[01;34m~/autobots[00m$ cd scripts/
+]0;holyender@autobot: ~/autobots/scripts[01;32mholyender@autobot[00m:[01;34m~/autobots/scripts[00m$ cd[K[Kls
+GiftRunJenkins.sh
+]0;holyender@autobot: ~/autobots/scripts[01;32mholyender@autobot[00m:[01;34m~/autobots/scripts[00m$ ./g[KG[K[K[KGET [K[K[K[K./GiftRunK[KJenkins.sh
+bash: ./GiftRunJenkins.sh: Permission denied
+]0;holyender@autobot: ~/autobots/scripts[01;32mholyender@autobot[00m:[01;34m~/autobots/scripts[00m$ chomod +x GiftRunJenkins.sh 
+No command 'chomod' found, did you mean:
+ Command 'chmod' from package 'coreutils' (main)
+chomod: command not found
+]0;holyender@autobot: ~/autobots/scripts[01;32mholyender@autobot[00m:[01;34m~/autobots/scripts[00m$ chomod +x GiftRunJenkins.sh [1P
+]0;holyender@autobot: ~/autobots/scripts[01;32mholyender@autobot[00m:[01;34m~/autobots/scripts[00m$ chmod +x GiftRunJenkins.sh [1@o[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9P./GiftRunJenkins.sh
+Codeception PHP Testing Framework v2.4.2
+Powered by PHPUnit 7.1.5 by Sebastian Bergmann and contributors.
+
+[1mAcceptance Tests (6) [22m---------------------------------------------------------------------------------------------------
+[35;1mGiftTestCest:[39;22m Individualgift
+Signature: [32mGiftTestCest:individualgift[39m
+Test: [32mtests/acceptance/GiftTestCest.php:individualgift[39m
+[33mScenario --[39m
+[1m I [22mam on page "/"
+[1m I [22mclick "log in"
+[1m I [22mam on page "/user"
+[1m I [22mclick "Sign up"
+[1m I [22mam on page "/gift/individual"
+[1m I [22mfill field "#edit-join-account-account-mail","jointest642557@jointest.com"
+[1m I [22mfill field "#edit-join-account-account-user-pass-pass1","testregisterPassword"
+[1m I [22mfill field "#edit-join-account-account-user-pass-pass2","testregisterPassword"
+[1m I [22mfill field "#edit-profile-main-field-billing-first-name-und-0-value","FN642557"
+[1m I [22mfill field "#edit-profile-main-field-billing-last-name-und-0-value","LN642557"
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-thoroughfare","123 testaddress1 st."
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-premise","apartment addr2"
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-locality","testjoincity"
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-postal-code","10027"
+[1m I [22mselect option "#edit-profile-main-field-billing-title-und","Dr."
+[1m I [22mselect option "#edit-profile-main-field-billing-location-und-0-country","United States"
+[1m I [22mselect option "#edit-profile-main-field-billing-location-und-0-administrative-area","New York"
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee current url equals "/gift/individual/member-card"
+[1m I [22mfill field "#edit-profile-main-mail","gifttest642557@jointest.com"
+[1m I [22mfill field "#edit-profile-main-field-profile-first-name-und-0-value","FN642557"
+[1m I [22mfill field "#edit-profile-main-field-profile-last-name-und-0-value","LN642557"
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-thoroughfare","123 testaddress1 st."
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-premise","apartment addr2"
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-locality","testjoincity"
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-postal-code","10027"
+[1m I [22mselect option "#edit-profile-main-field-profile-title-und","Dr."
+[1m I [22mselect option "#edit-profile-main-field-profile-location-und-0-country","United States"
+[1m I [22mselect option "#edit-profile-main-field-profile-location-und-0-administrative-area","New York"
+[1m I [22mfill field "#edit-member-card-membership-card-card-name-first-und-0-value","FN642557"
+[1m I [22mfill field "#edit-member-card-membership-card-card-name-last-und-0-value","LN642557"
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee current url equals "/gift/individual/review"
+[1m I [22mexecute js "jQuery("#edit-membership-review-membership-terms").show()"
+[1m I [22mcheck option "#edit-membership-review-membership-terms"
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee current url equals "/gift/individual/payment-method"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-owner","FN642557"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-owner","FN642557 LN642557"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-number","4242424242424242"
+[1m I [22mselect option "#edit-commerce-payment-payment-details-credit-card-exp-month","12 - December"
+[1m I [22mselect option "#edit-commerce-payment-payment-details-credit-card-exp-year","2025"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-code","789"
+[1m I [22mwait 5
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee "Thank You"
+[1m I [22msee current url equals "/gift/individual/complete"
+[1m I [22mwait 3
+[32;1m PASSED [39;22m
+
+[35;1mGiftTestCest:[39;22m Dualgift
+Signature: [32mGiftTestCest:dualgift[39m
+Test: [32mtests/acceptance/GiftTestCest.php:dualgift[39m
+[33mScenario --[39m
+[1m I [22mam on page "/"
+[1m I [22mam on page "/gift/dual"
+[1m I [22mfill field "#edit-join-account-account-mail","jointest192842@jointest.com"
+[1m I [22mfill field "#edit-join-account-account-user-pass-pass1","testregisterPassword"
+[1m I [22mfill field "#edit-join-account-account-user-pass-pass2","testregisterPassword"
+[1m I [22mfill field "#edit-profile-main-field-billing-first-name-und-0-value","FN192842"
+[1m I [22mfill field "#edit-profile-main-field-billing-last-name-und-0-value","LN192842"
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-thoroughfare","123 testaddress1 st."
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-premise","apartment addr2"
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-locality","testjoincity"
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-postal-code","10027"
+[1m I [22mselect option "#edit-profile-main-field-billing-title-und","Dr."
+[1m I [22mselect option "#edit-profile-main-field-billing-location-und-0-country","United States"
+[1m I [22mselect option "#edit-profile-main-field-billing-location-und-0-administrative-area","New York"
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee current url equals "/gift/dual/member-card"
+[1m I [22mfill field "#edit-profile-main-mail","gifttest192842@jointest.com"
+[1m I [22mfill field "#edit-profile-main-field-profile-first-name-und-0-value","FN192842"
+[1m I [22mfill field "#edit-profile-main-field-profile-last-name-und-0-value","LN192842"
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-thoroughfare","123 testaddress1 st."
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-premise","apartment addr2"
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-locality","testjoincity"
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-postal-code","10027"
+[1m I [22mselect option "#edit-profile-main-field-profile-title-und","Dr."
+[1m I [22mselect option "#edit-profile-main-field-profile-location-und-0-country","United States"
+[1m I [22mselect option "#edit-profile-main-field-profile-location-und-0-administrative-area","New York"
+[1m I [22mfill field "#edit-member-card-membership-card-card-name-first-und-0-value","FN192842"
+[1m I [22mfill field "#edit-member-card-membership-card-card-name-last-und-0-value","LN192842"
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee current url equals "/gift/dual/review"
+[1m I [22mexecute js "jQuery("#edit-membership-review-membership-terms").show()"
+[1m I [22mcheck option "#edit-membership-review-membership-terms"
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee current url equals "/gift/dual/payment-method"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-owner","FN192842"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-owner","FN192842 LN192842"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-number","4242424242424242"
+[1m I [22mselect option "#edit-commerce-payment-payment-details-credit-card-exp-month","12 - December"
+[1m I [22mselect option "#edit-commerce-payment-payment-details-credit-card-exp-year","2025"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-code","789"
+[1m I [22mwait 5
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee "Thank You"
+[1m I [22msee current url equals "/gift/dual/complete"
+[1m I [22mwait 3
+[32;1m PASSED [39;22m
+
+[35;1mGiftTestCest:[39;22m Familygift
+Signature: [32mGiftTestCest:familygift[39m
+Test: [32mtests/acceptance/GiftTestCest.php:familygift[39m
+[33mScenario --[39m
+[1m I [22mam on page "/"
+[1m I [22mam on page "/gift/family"
+[1m I [22mfill field "#edit-join-account-account-mail","jointest426678@jointest.com"
+[1m I [22mfill field "#edit-join-account-account-user-pass-pass1","testregisterPassword"
+[1m I [22mfill field "#edit-join-account-account-user-pass-pass2","testregisterPassword"
+[1m I [22mfill field "#edit-profile-main-field-billing-first-name-und-0-value","FN426678"
+[1m I [22mfill field "#edit-profile-main-field-billing-last-name-und-0-value","LN426678"
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-thoroughfare","123 testaddress1 st."
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-premise","apartment addr2"
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-locality","testjoincity"
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-postal-code","10027"
+[1m I [22mselect option "#edit-profile-main-field-billing-title-und","Dr."
+[1m I [22mselect option "#edit-profile-main-field-billing-location-und-0-country","United States"
+[1m I [22mselect option "#edit-profile-main-field-billing-location-und-0-administrative-area","New York"
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee current url equals "/gift/family/member-card"
+[1m I [22mfill field "#edit-profile-main-mail","gifttest426678@jointest.com"
+[1m I [22mfill field "#edit-profile-main-field-profile-first-name-und-0-value","FN426678"
+[1m I [22mfill field "#edit-profile-main-field-profile-last-name-und-0-value","LN426678"
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-thoroughfare","123 testaddress1 st."
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-premise","apartment addr2"
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-locality","testjoincity"
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-postal-code","10027"
+[1m I [22mselect option "#edit-profile-main-field-profile-title-und","Dr."
+[1m I [22mselect option "#edit-profile-main-field-profile-location-und-0-country","United States"
+[1m I [22mselect option "#edit-profile-main-field-profile-location-und-0-administrative-area","New York"
+[1m I [22mfill field "#edit-member-card-membership-card-card-name-first-und-0-value","FN426678"
+[1m I [22mfill field "#edit-member-card-membership-card-card-name-last-und-0-value","LN426678"
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee current url equals "/gift/family/review"
+[1m I [22mexecute js "jQuery("#edit-membership-review-membership-terms").show()"
+[1m I [22mcheck option "#edit-membership-review-membership-terms"
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee current url equals "/gift/family/payment-method"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-owner","FN426678"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-owner","FN426678 LN426678"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-number","4242424242424242"
+[1m I [22mselect option "#edit-commerce-payment-payment-details-credit-card-exp-month","12 - December"
+[1m I [22mselect option "#edit-commerce-payment-payment-details-credit-card-exp-year","2025"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-code","789"
+[1m I [22mwait 5
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee "Thank You"
+[1m I [22msee current url equals "/gift/family/complete"
+[1m I [22mwait 3
+[32;1m PASSED [39;22m
+
+[35;1mGiftTestCest:[39;22m Visionarygift
+Signature: [32mGiftTestCest:visionarygift[39m
+Test: [32mtests/acceptance/GiftTestCest.php:visionarygift[39m
+[33mScenario --[39m
+[1m I [22mam on page "/"
+[1m I [22mam on page "/gift/visionary"
+[1m I [22mfill field "#edit-join-account-account-mail","jointest509052@jointest.com"
+[1m I [22mfill field "#edit-join-account-account-user-pass-pass1","testregisterPassword"
+[1m I [22mfill field "#edit-join-account-account-user-pass-pass2","testregisterPassword"
+[1m I [22mfill field "#edit-profile-main-field-billing-first-name-und-0-value","FN509052"
+[1m I [22mfill field "#edit-profile-main-field-billing-last-name-und-0-value","LN509052"
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-thoroughfare","123 testaddress1 st."
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-premise","apartment addr2"
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-locality","testjoincity"
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-postal-code","10027"
+[1m I [22mselect option "#edit-profile-main-field-billing-title-und","Dr."
+[1m I [22mselect option "#edit-profile-main-field-billing-location-und-0-country","United States"
+[1m I [22mselect option "#edit-profile-main-field-billing-location-und-0-administrative-area","New York"
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee current url equals "/gift/visionary/member-card"
+[1m I [22mfill field "#edit-profile-main-mail","gifttest509052@jointest.com"
+[1m I [22mfill field "#edit-profile-main-field-profile-first-name-und-0-value","FN509052"
+[1m I [22mfill field "#edit-profile-main-field-profile-last-name-und-0-value","LN509052"
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-thoroughfare","123 testaddress1 st."
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-premise","apartment addr2"
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-locality","testjoincity"
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-postal-code","10027"
+[1m I [22mselect option "#edit-profile-main-field-profile-title-und","Dr."
+[1m I [22mselect option "#edit-profile-main-field-profile-location-und-0-country","United States"
+[1m I [22mselect option "#edit-profile-main-field-profile-location-und-0-administrative-area","New York"
+[1m I [22mfill field "#edit-member-card-membership-card-card-name-first-und-0-value","FN509052"
+[1m I [22mfill field "#edit-member-card-membership-card-card-name-last-und-0-value","LN509052"
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee current url equals "/gift/visionary/review"
+[1m I [22mexecute js "jQuery("#edit-membership-review-membership-terms").show()"
+[1m I [22mcheck option "#edit-membership-review-membership-terms"
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee current url equals "/gift/visionary/payment-method"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-owner","FN509052"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-owner","FN509052 LN509052"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-number","4242424242424242"
+[1m I [22mselect option "#edit-commerce-payment-payment-details-credit-card-exp-month","12 - December"
+[1m I [22mselect option "#edit-commerce-payment-payment-details-credit-card-exp-year","2025"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-code","789"
+[1m I [22mwait 5
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee "Thank You"
+[1m I [22msee current url equals "/gift/visionary/complete"
+[1m I [22mwait 3
+[32;1m PASSED [39;22m
+
+[35;1mGiftTestCest:[39;22m Contributorgift
+Signature: [32mGiftTestCest:contributorgift[39m
+Test: [32mtests/acceptance/GiftTestCest.php:contributorgift[39m
+[33mScenario --[39m
+[1m I [22mam on page "/"
+[1m I [22mam on page "/gift/contributor"
+[1m I [22mfill field "#edit-join-account-account-mail","jointest715032@jointest.com"
+[1m I [22mfill field "#edit-join-account-account-user-pass-pass1","testregisterPassword"
+[1m I [22mfill field "#edit-join-account-account-user-pass-pass2","testregisterPassword"
+[1m I [22mfill field "#edit-profile-main-field-billing-first-name-und-0-value","FN715032"
+[1m I [22mfill field "#edit-profile-main-field-billing-last-name-und-0-value","LN715032"
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-thoroughfare","123 testaddress1 st."
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-premise","apartment addr2"
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-locality","testjoincity"
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-postal-code","10027"
+[1m I [22mselect option "#edit-profile-main-field-billing-title-und","Dr."
+[1m I [22mselect option "#edit-profile-main-field-billing-location-und-0-country","United States"
+[1m I [22mselect option "#edit-profile-main-field-billing-location-und-0-administrative-area","New York"
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee current url equals "/gift/contributor/member-card"
+[1m I [22mfill field "#edit-profile-main-mail","gifttest715032@jointest.com"
+[1m I [22mfill field "#edit-profile-main-field-profile-first-name-und-0-value","FN715032"
+[1m I [22mfill field "#edit-profile-main-field-profile-last-name-und-0-value","LN715032"
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-thoroughfare","123 testaddress1 st."
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-premise","apartment addr2"
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-locality","testjoincity"
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-postal-code","10027"
+[1m I [22mselect option "#edit-profile-main-field-profile-title-und","Dr."
+[1m I [22mselect option "#edit-profile-main-field-profile-location-und-0-country","United States"
+[1m I [22mselect option "#edit-profile-main-field-profile-location-und-0-administrative-area","New York"
+[1m I [22mfill field "#edit-member-card-membership-card-card-name-first-und-0-value","FN715032"
+[1m I [22mfill field "#edit-member-card-membership-card-card-name-last-und-0-value","LN715032"
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee current url equals "/gift/contributor/review"
+[1m I [22mexecute js "jQuery("#edit-membership-review-membership-terms").show()"
+[1m I [22mcheck option "#edit-membership-review-membership-terms"
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee current url equals "/gift/contributor/payment-method"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-owner","FN715032"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-owner","FN715032 LN715032"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-number","4242424242424242"
+[1m I [22mselect option "#edit-commerce-payment-payment-details-credit-card-exp-month","12 - December"
+[1m I [22mselect option "#edit-commerce-payment-payment-details-credit-card-exp-year","2025"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-code","789"
+[1m I [22mwait 5
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee "Thank You"
+[1m I [22msee current url equals "/gift/contributor/complete"
+[1m I [22mwait 3
+[32;1m PASSED [39;22m
+
+[35;1mGiftTestCest:[39;22m Patrongift
+Signature: [32mGiftTestCest:patrongift[39m
+Test: [32mtests/acceptance/GiftTestCest.php:patrongift[39m
+[33mScenario --[39m
+[1m I [22mam on page "/"
+[1m I [22mam on page "/gift/patron"
+[1m I [22mfill field "#edit-join-account-account-mail","jointest128890@jointest.com"
+[1m I [22mfill field "#edit-join-account-account-user-pass-pass1","testregisterPassword"
+[1m I [22mfill field "#edit-join-account-account-user-pass-pass2","testregisterPassword"
+[1m I [22mfill field "#edit-profile-main-field-billing-first-name-und-0-value","FN128890"
+[1m I [22mfill field "#edit-profile-main-field-billing-last-name-und-0-value","LN128890"
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-thoroughfare","123 testaddress1 st."
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-premise","apartment addr2"
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-locality","testjoincity"
+[1m I [22mfill field "#edit-profile-main-field-billing-location-und-0-postal-code","10027"
+[1m I [22mselect option "#edit-profile-main-field-billing-title-und","Dr."
+[1m I [22mselect option "#edit-profile-main-field-billing-location-und-0-country","United States"
+[1m I [22mselect option "#edit-profile-main-field-billing-location-und-0-administrative-area","New York"
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee current url equals "/gift/patron/member-card"
+[1m I [22mfill field "#edit-profile-main-mail","gifttest128890@jointest.com"
+[1m I [22mfill field "#edit-profile-main-field-profile-first-name-und-0-value","FN128890"
+[1m I [22mfill field "#edit-profile-main-field-profile-last-name-und-0-value","LN128890"
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-thoroughfare","123 testaddress1 st."
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-premise","apartment addr2"
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-locality","testjoincity"
+[1m I [22mfill field "#edit-profile-main-field-profile-location-und-0-postal-code","10027"
+[1m I [22mselect option "#edit-profile-main-field-profile-title-und","Dr."
+[1m I [22mselect option "#edit-profile-main-field-profile-location-und-0-country","United States"
+[1m I [22mselect option "#edit-profile-main-field-profile-location-und-0-administrative-area","New York"
+[1m I [22mfill field "#edit-member-card-membership-card-card-name-first-und-0-value","FN128890"
+[1m I [22mfill field "#edit-member-card-membership-card-card-name-last-und-0-value","LN128890"
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee current url equals "/gift/patron/review"
+[1m I [22mexecute js "jQuery("#edit-membership-review-membership-terms").show()"
+[1m I [22mcheck option "#edit-membership-review-membership-terms"
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee current url equals "/gift/patron/payment-method"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-owner","FN128890"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-owner","FN128890 LN128890"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-number","4242424242424242"
+[1m I [22mselect option "#edit-commerce-payment-payment-details-credit-card-exp-month","12 - December"
+[1m I [22mselect option "#edit-commerce-payment-payment-details-credit-card-exp-year","2025"
+[1m I [22mfill field "#edit-commerce-payment-payment-details-credit-card-code","789"
+[1m I [22mwait 5
+[1m I [22mclick "#edit-continue"
+[1m I [22mwait 5
+[1m I [22msee "Thank You"
+[1m I [22msee current url equals "/gift/patron/complete"
+[1m I [22mwait 3
+[32;1m PASSED [39;22m
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Time: 4.43 minutes, Memory: 10.00MB
+
+[30;42mOK (6 tests, 30 assertions)[0m
+- [1mHTML[22m report generated in [33mfile:///home/holyender/autobots/test2/tests/_output/report.html[39m
+]0;holyender@autobot: ~/autobots/scripts[01;32mholyender@autobot[00m:[01;34m~/autobots/scripts[00m$ 
+]0;holyender@autobot: ~/autobots/scripts[01;32mholyender@autobot[00m:[01;34m~/autobots/scripts[00m$ 
+]0;holyender@autobot: ~/autobots/scripts[01;32mholyender@autobot[00m:[01;34m~/autobots/scripts[00m$ ./GiftRunJenkins.sh[K./GiftRunJenkins.shchmod +x GiftRunJenkins.sh [8P./GiftRunJenkins.sh[Kcd ~
+]0;holyender@autobot: ~[01;32mholyender@autobot[00m:[01;34m~[00m$ /[K~/autobots//[Kscripts/
+bash: /home/holyender/autobots/scripts/: Is a directory
+]0;holyender@autobot: ~[01;32mholyender@autobot[00m:[01;34m~[00m$ ~/autobots/scripts/GiftRunJenkins.sh 
+Codeception PHP Testing Framework v2.4.2
+Powered by PHPUnit 7.1.5 by Sebastian Bergmann and contributors.
+
+[1mAcceptance Tests (6) [22m---------------------------------------------------------------------------------------------------
+[35;1mGiftTestCest:[39;22m Individualgift
+Signature: [32mGiftTestCest:individualgift[39m
+Test: [32mtests/acceptance/GiftTestCest.php:individualgift[39m
+[33mScenario --[39m
+[1m I [22mam on page "/"
+^C
+[31;1m ERROR [39;22m
+
+
+[33mIn ErrorHandler.php line 83:[39m
+[37;41m                                                                        [39;49m
+[37;41m  curl_setopt(): supplied resource is not a valid cURL handle resource  [39;49m
+[37;41m                                                                        [39;49m
+
+[32mrun [-o|--override OVERRIDE] [-e|--ext EXT] [--report] [--html [HTML]] [--xml [XML]] [--tap [TAP]] [--json [JSON]] [--colors] [--no-colors] [--silent] [--steps] [-d|--debug] [--coverage [COVERAGE]] [--coverage-html [COVERAGE-HTML]] [--coverage-xml [COVERAGE-XML]] [--coverage-text [COVERAGE-TEXT]] [--coverage-crap4j [COVERAGE-CRAP4J]] [--coverage-phpunit [COVERAGE-PHPUNIT]] [--no-exit] [-g|--group GROUP] [-s|--skip SKIP] [-x|--skip-group SKIP-GROUP] [--env ENV] [-f|--fail-fast] [--no-rebuild] [--] [[39m[32m<suite>[39m[32m [[39m[32m<test>[39m[32m]][39m
+
+PHP Fatal error:  Uncaught RuntimeException: Command Did Not Finish Properly in /home/holyender/codecept/vendor/codeception/codeception/src/Codeception/Subscriber/ErrorHandler.php:101
+Stack trace:
+#0 [internal function]: Codeception\Subscriber\ErrorHandler->shutdownHandler()
+#1 {main}
+  thrown in /home/holyender/codecept/vendor/codeception/codeception/src/Codeception/Subscriber/ErrorHandler.php on line 101
+
+]0;holyender@autobot: ~[01;32mholyender@autobot[00m:[01;34m~[00m$ 
+]0;holyender@autobot: ~[01;32mholyender@autobot[00m:[01;34m~[00m$ cd/[K /
+]0;holyender@autobot: /[01;32mholyender@autobot[00m:[01;34m/[00m$ ls
+[0m[01;34mbin[0m   [01;34mdev[0m  [01;34mhome[0m        [01;34mlib[0m    [01;34mlost+found[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msnap[0m  [01;34msys[0m  [01;34musr[0m  [01;36mvmlinuz[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36minitrd.img[0m  [01;34mlib64[0m  [01;34mmedia[0m       [01;34mopt[0m  [01;34mroot[0m  [01;34msbin[0m  [01;34msrv[0m   [30;42mtmp[0m  [01;34mvar[0m
+]0;holyender@autobot: /[01;32mholyender@autobot[00m:[01;34m/[00m$ cd usr
+]0;holyender@autobot: /usr[01;32mholyender@autobot[00m:[01;34m/usr[00m$ ls
+[0m[01;34mbin[0m  [01;34metc[0m  [01;34mgames[0m  [01;34minclude[0m  [01;34mlib[0m  [01;34mlocal[0m  [01;34msbin[0m  [01;34mshare[0m  [01;34msrc[0m
+]0;holyender@autobot: /usr[01;32mholyender@autobot[00m:[01;34m/usr[00m$ cd[K[Kcd[K[Kls
+[0m[01;34mbin[0m  [01;34metc[0m  [01;34mgames[0m  [01;34minclude[0m  [01;34mlib[0m  [01;34mlocal[0m  [01;34msbin[0m  [01;34mshare[0m  [01;34msrc[0m
+]0;holyender@autobot: /usr[01;32mholyender@autobot[00m:[01;34m/usr[00m$ cd ~
+]0;holyender@autobot: ~[01;32mholyender@autobot[00m:[01;34m~[00m$ ls
+[0m[01;34mautobots[0m                  [01;34mDesktop[0m    [01;34mMusic[0m         [01;34mPictures[0m  [01;31mselenium-server-standalone-3.12.0.jar[0m  [01;34mtests[0m
+[01;31mchromedriver_linux64.zip[0m  [01;34mDocuments[0m  [01;34mnode_modules[0m  [01;34mPublic[0m    shell script scraps                    [01;34mVideos[0m
+[01;34mcodecept[0m                  [01;34mDownloads[0m  nohup.out     [01;34mscripts[0m   [01;34mTemplates[0m
+]0;holyender@autobot: ~[01;32mholyender@autobot[00m:[01;34m~[00m$ cd ..
+]0;holyender@autobot: /home[01;32mholyender@autobot[00m:[01;34m/home[00m$ c[Kls
+[0m[01;34mholyender[0m  [01;34mryang[0m
+]0;holyender@autobot: /home[01;32mholyender@autobot[00m:[01;34m/home[00m$ cd ..
+]0;holyender@autobot: /[01;32mholyender@autobot[00m:[01;34m/[00m$ ls
+[0m[01;34mbin[0m   [01;34mdev[0m  [01;34mhome[0m        [01;34mlib[0m    [01;34mlost+found[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msnap[0m  [01;34msys[0m  [01;34musr[0m  [01;36mvmlinuz[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36minitrd.img[0m  [01;34mlib64[0m  [01;34mmedia[0m       [01;34mopt[0m  [01;34mroot[0m  [01;34msbin[0m  [01;34msrv[0m   [30;42mtmp[0m  [01;34mvar[0m
+]0;holyender@autobot: /[01;32mholyender@autobot[00m:[01;34m/[00m$ cd home/
+]0;holyender@autobot: /home[01;32mholyender@autobot[00m:[01;34m/home[00m$ ls
+[0m[01;34mholyender[0m  [01;34mryang[0m
+]0;holyender@autobot: /home[01;32mholyender@autobot[00m:[01;34m/home[00m$ cd holyender/
+]0;holyender@autobot: ~[01;32mholyender@autobot[00m:[01;34m~[00m$ ls
+[0m[01;34mautobots[0m                  [01;34mDesktop[0m    [01;34mMusic[0m         [01;34mPictures[0m  [01;31mselenium-server-standalone-3.12.0.jar[0m  [01;34mtests[0m
+[01;31mchromedriver_linux64.zip[0m  [01;34mDocuments[0m  [01;34mnode_modules[0m  [01;34mPublic[0m    shell script scraps                    [01;34mVideos[0m
+[01;34mcodecept[0m                  [01;34mDownloads[0m  nohup.out     [01;34mscripts[0m   [01;34mTemplates[0m
+]0;holyender@autobot: ~[01;32mholyender@autobot[00m:[01;34m~[00m$ cd autobots/
+]0;holyender@autobot: ~/autobots[01;32mholyender@autobot[00m:[01;34m~/autobots[00m$ cd scripts
+]0;holyender@autobot: ~/autobots/scripts[01;32mholyender@autobot[00m:[01;34m~/autobots/scripts[00m$ ls
+[0m[01;32mGiftRunJenkins.sh[0m
+]0;holyender@autobot: ~/autobots/scripts[01;32mholyender@autobot[00m:[01;34m~/autobots/scripts[00m$ 
+]0;holyender@autobot: ~/autobots/scripts[01;32mholyender@autobot[00m:[01;34m~/autobots/scripts[00m$ cd .[K~
+]0;holyender@autobot: ~[01;32mholyender@autobot[00m:[01;34m~[00m$ ls
+[0m[01;34mautobots[0m                  [01;34mDesktop[0m    [01;34mMusic[0m         [01;34mPictures[0m  [01;31mselenium-server-standalone-3.12.0.jar[0m  [01;34mtests[0m
+[01;31mchromedriver_linux64.zip[0m  [01;34mDocuments[0m  [01;34mnode_modules[0m  [01;34mPublic[0m    shell script scraps                    [01;34mVideos[0m
+[01;34mcodecept[0m                  [01;34mDownloads[0m  nohup.out     [01;34mscripts[0m   [01;34mTemplates[0m
+]0;holyender@autobot: ~[01;32mholyender@autobot[00m:[01;34m~[00m$ codecept
+Codeception [32m2.4.2[39m
+
+[33mUsage:[39m
+  command [options] [arguments]
+
+[33mOptions:[39m
+  [32m-h, --help[39m             Display this help message
+  [32m-q, --quiet[39m            Do not output any message
+  [32m-V, --version[39m          Display this application version
+  [32m    --ansi[39m             Force ANSI output
+  [32m    --no-ansi[39m          Disable ANSI output
+  [32m-n, --no-interaction[39m   Do not ask any interactive question
+  [32m-c, --config[=CONFIG][39m  Use custom path for config
+  [32m-v|vv|vvv, --verbose[39m   Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+
+[33mAvailable commands:[39m
+  [32mbootstrap[39m             Creates default test suites and generates all required files
+  [32mbuild[39m                 Generates base classes for all suites
+  [32mclean[39m                 Recursively cleans log and generated code
+  [32mconsole[39m               Launches interactive test console
+  [32mdry-run[39m               Prints step-by-step scenario-driven test or a feature
+  [32mhelp[39m                  Displays help for a command
+  [32minit[39m                  Creates test suites by a template
+  [32mlist[39m                  Lists commands
+  [32mrun[39m                   Runs the test suites
+ [33mconfig[39m
+  [32mconfig:validate[39m       Validates and prints config to screen
+ [33mgenerate[39m
+  [32mgenerate:cept[39m         Generates empty Cept file in suite
+  [32mgenerate:cest[39m         Generates empty Cest file in suite
+  [32mgenerate:environment[39m  Generates empty environment config
+  [32mgenerate:feature[39m      Generates empty feature file in suite
+  [32mgenerate:groupobject[39m  Generates Group subscriber
+  [32mgenerate:helper[39m       Generates new helper
+  [32mgenerate:pageobject[39m   Generates empty PageObject class
+  [32mgenerate:scenarios[39m    Generates text representation for all scenarios
+  [32mgenerate:stepobject[39m   Generates empty StepObject class
+  [32mgenerate:suite[39m        Generates new test suite
+  [32mgenerate:test[39m         Generates empty unit test file in suite
+ [33mgherkin[39m
+  [32mgherkin:snippets[39m      Fetches empty steps from feature files of suite and prints code snippets for them
+  [32mgherkin:steps[39m         Prints all defined feature steps
+]0;holyender@autobot: ~[01;32mholyender@autobot[00m:[01;34m~[00m$ ^C
+]0;holyender@autobot: ~[01;32mholyender@autobot[00m:[01;34m~[00m$ 
+]0;holyender@autobot: ~[01;32mholyender@autobot[00m:[01;34m~[00m$ which codecept
+/home/holyender/codecept/vendor/bin/codecept
+]0;holyender@autobot: ~[01;32mholyender@autobot[00m:[01;34m~[00m$ 
+]0;holyender@autobot: ~[01;32mholyender@autobot[00m:[01;34m~[00m$ ls
+[0m[01;34mautobots[0m                  [01;34mDesktop[0m    [01;34mMusic[0m         [01;34mPictures[0m  [01;31mselenium-server-standalone-3.12.0.jar[0m  [01;34mtests[0m
+[01;31mchromedriver_linux64.zip[0m  [01;34mDocuments[0m  [01;34mnode_modules[0m  [01;34mPublic[0m    shell script scraps                    [01;34mVideos[0m
+[01;34mcodecept[0m                  [01;34mDownloads[0m  nohup.out     [01;34mscripts[0m   [01;34mTemplates[0m
+]0;holyender@autobot: ~[01;32mholyender@autobot[00m:[01;34m~[00m$ cd autobots/tests[K2/
+]0;holyender@autobot: ~/autobots/test2[01;32mholyender@autobot[00m:[01;34m~/autobots/test2[00m$ ls
+codeception.yml  [0m[01;34mtests[0m
+]0;holyender@autobot: ~/autobots/test2[01;32mholyender@autobot[00m:[01;34m~/autobots/test2[00m$ cd tests/
+]0;holyender@autobot: ~/autobots/test2/tests[01;32mholyender@autobot[00m:[01;34m~/autobots/test2/tests[00m$ ls
+[0m[01;34macceptance[0m  acceptance.suite.yml  [01;34m_data[0m  [01;34mfunctional[0m  [34;42m_output[0m  [01;34m_support[0m  [01;34munit[0m
+]0;holyender@autobot: ~/autobots/test2/tests[01;32mholyender@autobot[00m:[01;34m~/autobots/test2/tests[00m$ cd acceptance/
+]0;holyender@autobot: ~/autobots/test2/tests/acceptance[01;32mholyender@autobot[00m:[01;34m~/autobots/test2/tests/acceptance[00m$ ls
+DonateTestCest.php  GiftTestCest.php  JoinTest2Cest.php  JoinTestCest.php  RegisterTestCest.php
+]0;holyender@autobot: ~/autobots/test2/tests/acceptance[01;32mholyender@autobot[00m:[01;34m~/autobots/test2/tests/acceptance[00m$ cd[K[K
+]0;holyender@autobot: ~/autobots/test2/tests/acceptance[01;32mholyender@autobot[00m:[01;34m~/autobots/test2/tests/acceptance[00m$ 
+]0;holyender@autobot: ~/autobots/test2/tests/acceptance[01;32mholyender@autobot[00m:[01;34m~/autobots/test2/tests/acceptance[00m$ 
+]0;holyender@autobot: ~/autobots/test2/tests/acceptance[01;32mholyender@autobot[00m:[01;34m~/autobots/test2/tests/acceptance[00m$ cd ~
+]0;holyender@autobot: ~[01;32mholyender@autobot[00m:[01;34m~[00m$ ls
+[0m[01;34mautobots[0m                  [01;34mDesktop[0m    [01;34mMusic[0m         [01;34mPictures[0m  [01;31mselenium-server-standalone-3.12.0.jar[0m  [01;34mtests[0m
+[01;31mchromedriver_linux64.zip[0m  [01;34mDocuments[0m  [01;34mnode_modules[0m  [01;34mPublic[0m    shell script scraps                    [01;34mVideos[0m
+[01;34mcodecept[0m                  [01;34mDownloads[0m  nohup.out     [01;34mscripts[0m   [01;34mTemplates[0m
+]0;holyender@autobot: ~[01;32mholyender@autobot[00m:[01;34m~[00m$ cd autobots/
+]0;holyender@autobot: ~/autobots[01;32mholyender@autobot[00m:[01;34m~/autobots[00m$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   scraps/scraps1.php[m
+	[31mmodified:   test2/tests/_output/.gitkeep[m
+	[31mmodified:   test2/tests/_output/DonateTestCest.donatetest.fail.html[m
+	[31mmodified:   test2/tests/_output/DonateTestCest.donatetest.fail.png[m
+	[31mmodified:   test2/tests/_output/GiftTestCest.contributorgift.fail.html[m
+	[31mmodified:   test2/tests/_output/GiftTestCest.contributorgift.fail.png[m
+	[31mmodified:   test2/tests/_output/GiftTestCest.individualgift.fail.html[m
+	[31mmodified:   test2/tests/_output/GiftTestCest.individualgift.fail.png[m
+	[31mmodified:   test2/tests/_output/GiftTestCest.visionarygift.fail.html[m
+	[31mmodified:   test2/tests/_output/GiftTestCest.visionarygift.fail.png[m
+	[31mmodified:   test2/tests/_output/JoinTest2Cest.dualtest.fail.html[m
+	[31mmodified:   test2/tests/_output/JoinTest2Cest.dualtest.fail.png[m
+	[31mmodified:   test2/tests/_output/JoinTest2Cest.individualrenewtest.fail.html[m
+	[31mmodified:   test2/tests/_output/JoinTest2Cest.individualrenewtest.fail.png[m
+	[31mmodified:   test2/tests/_output/JoinTestCest.contributortest.fail.html[m
+	[31mmodified:   test2/tests/_output/JoinTestCest.contributortest.fail.png[m
+	[31mmodified:   test2/tests/_output/JoinTestCest.dualtest.fail.html[m
+	[31mmodified:   test2/tests/_output/JoinTestCest.dualtest.fail.png[m
+	[31mmodified:   test2/tests/_output/JoinTestCest.familytest.fail.html[m
+	[31mmodified:   test2/tests/_output/JoinTestCest.familytest.fail.png[m
+	[31mmodified:   test2/tests/_output/JoinTestCest.individualtest.fail.html[m
+	[31mmodified:   test2/tests/_output/JoinTestCest.individualtest.fail.png[m
+	[31mmodified:   test2/tests/_output/JoinTestCest.patrontest.fail.html[m
+	[31mmodified:   test2/tests/_output/JoinTestCest.patrontest.fail.png[m
+	[31mmodified:   test2/tests/_output/JoinTestCest.visionarytest.fail.html[m
+	[31mmodified:   test2/tests/_output/JoinTestCest.visionarytest.fail.png[m
+	[31mmodified:   test2/tests/_output/report.html[m
+	[31mmodified:   test2/tests/_support/_generated/AcceptanceTesterActions.php[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mscraps/runGiftTestCest.sh[m
+	[31mscripts/[m
+	[31mtypescript[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;holyender@autobot: ~/autobots[01;32mholyender@autobot[00m:[01;34m~/autobots[00m$ git pull
+remote: Counting objects: 21, done.[K
+remote: Compressing objects:   6% (1/15)   [Kremote: Compressing objects:  13% (2/15)   [Kremote: Compressing objects:  20% (3/15)   [Kremote: Compressing objects:  26% (4/15)   [Kremote: Compressing objects:  33% (5/15)   [Kremote: Compressing objects:  40% (6/15)   [Kremote: Compressing objects:  46% (7/15)   [Kremote: Compressing objects:  53% (8/15)   [Kremote: Compressing objects:  60% (9/15)   [Kremote: Compressing objects:  66% (10/15)   [Kremote: Compressing objects:  73% (11/15)   [Kremote: Compressing objects:  80% (12/15)   [Kremote: Compressing objects:  86% (13/15)   [Kremote: Compressing objects:  93% (14/15)   [Kremote: Compressing objects: 100% (15/15)   [Kremote: Compressing objects: 100% (15/15), done.[K
+remote: Total 21 (delta 7), reused 19 (delta 5), pack-reused 0[K
+Unpacking objects:   4% (1/21)   Unpacking objects:   9% (2/21)   Unpacking objects:  14% (3/21)   Unpacking objects:  19% (4/21)   Unpacking objects:  23% (5/21)   Unpacking objects:  28% (6/21)   Unpacking objects:  33% (7/21)   Unpacking objects:  38% (8/21)   Unpacking objects:  42% (9/21)   Unpacking objects:  47% (10/21)   Unpacking objects:  52% (11/21)   Unpacking objects:  57% (12/21)   Unpacking objects:  61% (13/21)   Unpacking objects:  66% (14/21)   Unpacking objects:  71% (15/21)   Unpacking objects:  76% (16/21)   Unpacking objects:  80% (17/21)   Unpacking objects:  85% (18/21)   Unpacking objects:  90% (19/21)   Unpacking objects:  95% (20/21)   Unpacking objects: 100% (21/21)   Unpacking objects: 100% (21/21), done.
+From https://github.com/holyender/autobots
+   05406d6..5b2ca4a  master     -> origin/master
+Updating 05406d6..5b2ca4a
+Fast-forward
+ scraps/UbuntuInstallScraps                       | 14 [32m++++++++++++++[m
+ scraps/old batch scripts/backstoptest.bat        |  6 [32m++++++[m
+ scraps/old batch scripts/calltest.bat            |  9 [32m+++++++++[m
+ scraps/old batch scripts/chromedriverrun.bat     |  2 [32m++[m
+ scraps/old batch scripts/codecepttest.bat        |  3 [32m+++[m
+ scraps/old batch scripts/holyenderazuressh.cmd   |  1 [32m+[m
+ scraps/old batch scripts/jenkins localserver.bat |  3 [32m+++[m
+ scraps/old batch scripts/seleniumserverSA.bat    |  3 [32m+++[m
+ scraps/old batch scripts/stgDonateTest.bat       |  2 [32m++[m
+ scraps/old batch scripts/stgRegisterTest.bat     |  2 [32m++[m
+ test2/tests/acceptance/DonateTestCest.php        |  3 [32m++[m[31m-[m
+ 11 files changed, 47 insertions(+), 1 deletion(-)
+ create mode 100644 scraps/UbuntuInstallScraps
+ create mode 100644 scraps/old batch scripts/backstoptest.bat
+ create mode 100644 scraps/old batch scripts/calltest.bat
+ create mode 100644 scraps/old batch scripts/chromedriverrun.bat
+ create mode 100644 scraps/old batch scripts/codecepttest.bat
+ create mode 100644 scraps/old batch scripts/holyenderazuressh.cmd
+ create mode 100644 scraps/old batch scripts/jenkins localserver.bat
+ create mode 100644 scraps/old batch scripts/seleniumserverSA.bat
+ create mode 100644 scraps/old batch scripts/stgDonateTest.bat
+ create mode 100644 scraps/old batch scripts/stgRegisterTest.bat
+]0;holyender@autobot: ~/autobots[01;32mholyender@autobot[00m:[01;34m~/autobots[00m$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   scraps/scraps1.php[m
+	[31mmodified:   test2/tests/_output/.gitkeep[m
+	[31mmodified:   test2/tests/_output/DonateTestCest.donatetest.fail.html[m
+	[31mmodified:   test2/tests/_output/DonateTestCest.donatetest.fail.png[m
+	[31mmodified:   test2/tests/_output/GiftTestCest.contributorgift.fail.html[m
+	[31mmodified:   test2/tests/_output/GiftTestCest.contributorgift.fail.png[m
+	[31mmodified:   test2/tests/_output/GiftTestCest.individualgift.fail.html[m
+	[31mmodified:   test2/tests/_output/GiftTestCest.individualgift.fail.png[m
+	[31mmodified:   test2/tests/_output/GiftTestCest.visionarygift.fail.html[m
+	[31mmodified:   test2/tests/_output/GiftTestCest.visionarygift.fail.png[m
+	[31mmodified:   test2/tests/_output/JoinTest2Cest.dualtest.fail.html[m
+	[31mmodified: 
