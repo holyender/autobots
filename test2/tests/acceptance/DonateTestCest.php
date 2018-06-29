@@ -22,6 +22,7 @@ class DonateTestCest
 
     public function donatetest(AcceptanceTester $I)
     {
+        $tmp = (string)rand(1,900000);
         $I->amOnPage('/');
         $I->click('donations');
         $I->amOnPage('/make-monetary-donation-now');
@@ -45,7 +46,7 @@ class DonateTestCest
         $I->fillField('Honoree Last Name','testHonorLN');
         $I->fillField('Honoree Organization Name','testHonorOrg');
         
-        $I->fillField('E-mail address','testHonorEmail@gmail.com');
+        $I->fillField('E-mail address','testHonorEmail'.$tmp.'@gmail.com');
         
         $I->fillField('First name','testFN');
         $I->fillField('Last name','testLN');
