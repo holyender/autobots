@@ -209,13 +209,13 @@
  <body>
    <ul id="toolbar-filter">
      <li> <a href="#" title="Show all" onClick="showAllScenarios()">◯</a></li>
-     <li> <a href="#" title="Successful" onClick="toggleScenarios('scenarioSuccess', this.parentElement)"><strong>✔</strong> 6</a></li>
-     <li> <a href="#" title="Failed" onClick="toggleScenarios('scenarioFailed', this.parentElement)"><strong>✗</strong> 0</a></li>
+     <li> <a href="#" title="Successful" onClick="toggleScenarios('scenarioSuccess', this.parentElement)"><strong>✔</strong> 9</a></li>
+     <li> <a href="#" title="Failed" onClick="toggleScenarios('scenarioFailed', this.parentElement)"><strong>✗</strong> 2</a></li>
      <li> <a href="#" title="Skipped" onClick="toggleScenarios('scenarioSkipped', this.parentElement)"><strong>S</strong> 0</a></li>
      <li> <a href="#" title="Incomplete" onClick="toggleScenarios('scenarioIncomplete', this.parentElement)"><strong>I</strong> 0</a></li>
    </ul>
  <div class="layout">
- <h1>Codeception Results <small><span style="color: green">OK</span> (254.2s)</small></h1>
+ <h1>Codeception Results <small><span style="color: #e74c3c">FAILED</span> (400s)</small></h1>
 
 
 
@@ -227,12 +227,117 @@
 </tr>   <tr class="scenarioRow scenarioSuccess">
     <td>
      <p class="scenarioSuccess" onclick="showHide('1', this)"><span class="toggle">+</span>
-          <span class="quiet">GiftTestCest &raquo;</span> Individualgift <span style="color: #34495e; font-size: 70%;">48.47s</span></p>
+          <span class="quiet">DonateTestCest &raquo;</span> Logintest <span style="color: #34495e; font-size: 70%;">5.26s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
      <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer1">
+
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;log in&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/user&quot;</span></td>
+      </tr>
+
+
+         
+         
+         
+     </table>
+
+
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('2', this)"><span class="toggle">+</span>
+          <span class="quiet">DonateTestCest &raquo;</span> Donatetest <span style="color: #34495e; font-size: 70%;">20.34s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer2">
+
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;donations&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/make-monetary-donation-now&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">10</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I check option <span style="color: #732E81">&quot;#edit-amount-amount-500&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;Dedication Message&quot;,&quot;testDedicationMessage&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I select option <span style="color: #732E81">&quot;#edit-amount-field-cobblestone-honoree-title-und&quot;,&quot;Dr.&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;Honoree First Name&quot;,&quot;testHonorFN&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;Honoree Last Name&quot;,&quot;testHonorLN&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;Honoree Organization Name&quot;,&quot;testHonorOrg&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName failedStep">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;E-mail address&quot;,&quot;testHonorEmail336403@gmail.com&quot;</span></td>
+      </tr>
+
+
+         <tr >
+    <td class="error">
+        Field by name, label, CSS or XPath element with 'E-mail address' was not found.
+    </td>
+</tr>
+
+         <tr><td class='error'><div class='screenshot'><img src='DonateTestCest.donatetest.fail.png' alt='failure screenshot'></div></td></tr>
+         <tr><td class='error'>See <a href='DonateTestCest.donatetest.fail.html' target='_blank'>HTML snapshot</a> of a failed page</td></tr>
+     </table>
+
+
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('3', this)"><span class="toggle">+</span>
+          <span class="quiet">GiftTestCest &raquo;</span> Individualgift <span style="color: #34495e; font-size: 70%;">48.05s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer3">
 
 
       <tr>
@@ -256,7 +361,7 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-join-account-account-mail&quot;,&quot;jointest731808@jointest.com&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-join-account-account-mail&quot;,&quot;jointest448377@jointest.com&quot;</span></td>
       </tr>
 
       <tr>
@@ -268,11 +373,11 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-first-name-und-0-value&quot;,&quot;FN731808&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-first-name-und-0-value&quot;,&quot;FN448377&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-last-name-und-0-value&quot;,&quot;LN731808&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-last-name-und-0-value&quot;,&quot;LN448377&quot;</span></td>
       </tr>
 
       <tr>
@@ -316,15 +421,15 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-mail&quot;,&quot;gifttest731808@jointest.com&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-mail&quot;,&quot;gifttest448377@jointest.com&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-first-name-und-0-value&quot;,&quot;FN731808&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-first-name-und-0-value&quot;,&quot;FN448377&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-last-name-und-0-value&quot;,&quot;LN731808&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-last-name-und-0-value&quot;,&quot;LN448377&quot;</span></td>
       </tr>
 
       <tr>
@@ -356,11 +461,11 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-first-und-0-value&quot;,&quot;FN731808&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-first-und-0-value&quot;,&quot;FN448377&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-last-und-0-value&quot;,&quot;LN731808&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-last-und-0-value&quot;,&quot;LN448377&quot;</span></td>
       </tr>
 
       <tr>
@@ -396,11 +501,11 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN731808&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN448377&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN731808 LN731808&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN448377 LN448377&quot;</span></td>
       </tr>
 
       <tr>
@@ -456,13 +561,13 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('2', this)"><span class="toggle">+</span>
-          <span class="quiet">GiftTestCest &raquo;</span> Dualgift <span style="color: #34495e; font-size: 70%;">41.07s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('4', this)"><span class="toggle">+</span>
+          <span class="quiet">GiftTestCest &raquo;</span> Dualgift <span style="color: #34495e; font-size: 70%;">44.58s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer2">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer4">
 
 
       <tr>
@@ -474,7 +579,7 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-join-account-account-mail&quot;,&quot;jointest176704@jointest.com&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-join-account-account-mail&quot;,&quot;jointest96588@jointest.com&quot;</span></td>
       </tr>
 
       <tr>
@@ -486,11 +591,11 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-first-name-und-0-value&quot;,&quot;FN176704&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-first-name-und-0-value&quot;,&quot;FN96588&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-last-name-und-0-value&quot;,&quot;LN176704&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-last-name-und-0-value&quot;,&quot;LN96588&quot;</span></td>
       </tr>
 
       <tr>
@@ -534,15 +639,15 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-mail&quot;,&quot;gifttest176704@jointest.com&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-mail&quot;,&quot;gifttest96588@jointest.com&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-first-name-und-0-value&quot;,&quot;FN176704&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-first-name-und-0-value&quot;,&quot;FN96588&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-last-name-und-0-value&quot;,&quot;LN176704&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-last-name-und-0-value&quot;,&quot;LN96588&quot;</span></td>
       </tr>
 
       <tr>
@@ -574,11 +679,11 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-first-und-0-value&quot;,&quot;FN176704&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-first-und-0-value&quot;,&quot;FN96588&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-last-und-0-value&quot;,&quot;LN176704&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-last-und-0-value&quot;,&quot;LN96588&quot;</span></td>
       </tr>
 
       <tr>
@@ -614,11 +719,11 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN176704&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN96588&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN176704 LN176704&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN96588 LN96588&quot;</span></td>
       </tr>
 
       <tr>
@@ -674,13 +779,13 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('3', this)"><span class="toggle">+</span>
-          <span class="quiet">GiftTestCest &raquo;</span> Familygift <span style="color: #34495e; font-size: 70%;">41.1s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('5', this)"><span class="toggle">+</span>
+          <span class="quiet">GiftTestCest &raquo;</span> Familygift <span style="color: #34495e; font-size: 70%;">44.7s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer3">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer5">
 
 
       <tr>
@@ -692,7 +797,7 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-join-account-account-mail&quot;,&quot;jointest560159@jointest.com&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-join-account-account-mail&quot;,&quot;jointest769777@jointest.com&quot;</span></td>
       </tr>
 
       <tr>
@@ -704,11 +809,11 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-first-name-und-0-value&quot;,&quot;FN560159&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-first-name-und-0-value&quot;,&quot;FN769777&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-last-name-und-0-value&quot;,&quot;LN560159&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-last-name-und-0-value&quot;,&quot;LN769777&quot;</span></td>
       </tr>
 
       <tr>
@@ -752,15 +857,15 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-mail&quot;,&quot;gifttest560159@jointest.com&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-mail&quot;,&quot;gifttest769777@jointest.com&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-first-name-und-0-value&quot;,&quot;FN560159&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-first-name-und-0-value&quot;,&quot;FN769777&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-last-name-und-0-value&quot;,&quot;LN560159&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-last-name-und-0-value&quot;,&quot;LN769777&quot;</span></td>
       </tr>
 
       <tr>
@@ -792,11 +897,11 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-first-und-0-value&quot;,&quot;FN560159&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-first-und-0-value&quot;,&quot;FN769777&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-last-und-0-value&quot;,&quot;LN560159&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-last-und-0-value&quot;,&quot;LN769777&quot;</span></td>
       </tr>
 
       <tr>
@@ -832,11 +937,11 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN560159&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN769777&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN560159 LN560159&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN769777 LN769777&quot;</span></td>
       </tr>
 
       <tr>
@@ -892,13 +997,13 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('4', this)"><span class="toggle">+</span>
-          <span class="quiet">GiftTestCest &raquo;</span> Visionarygift <span style="color: #34495e; font-size: 70%;">41.91s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('6', this)"><span class="toggle">+</span>
+          <span class="quiet">GiftTestCest &raquo;</span> Visionarygift <span style="color: #34495e; font-size: 70%;">44.28s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer4">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer6">
 
 
       <tr>
@@ -910,7 +1015,7 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-join-account-account-mail&quot;,&quot;jointest445594@jointest.com&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-join-account-account-mail&quot;,&quot;jointest83136@jointest.com&quot;</span></td>
       </tr>
 
       <tr>
@@ -922,11 +1027,11 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-first-name-und-0-value&quot;,&quot;FN445594&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-first-name-und-0-value&quot;,&quot;FN83136&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-last-name-und-0-value&quot;,&quot;LN445594&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-last-name-und-0-value&quot;,&quot;LN83136&quot;</span></td>
       </tr>
 
       <tr>
@@ -970,15 +1075,15 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-mail&quot;,&quot;gifttest445594@jointest.com&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-mail&quot;,&quot;gifttest83136@jointest.com&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-first-name-und-0-value&quot;,&quot;FN445594&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-first-name-und-0-value&quot;,&quot;FN83136&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-last-name-und-0-value&quot;,&quot;LN445594&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-last-name-und-0-value&quot;,&quot;LN83136&quot;</span></td>
       </tr>
 
       <tr>
@@ -1010,11 +1115,11 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-first-und-0-value&quot;,&quot;FN445594&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-first-und-0-value&quot;,&quot;FN83136&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-last-und-0-value&quot;,&quot;LN445594&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-last-und-0-value&quot;,&quot;LN83136&quot;</span></td>
       </tr>
 
       <tr>
@@ -1050,11 +1155,11 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN445594&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN83136&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN445594 LN445594&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN83136 LN83136&quot;</span></td>
       </tr>
 
       <tr>
@@ -1110,13 +1215,13 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('5', this)"><span class="toggle">+</span>
-          <span class="quiet">GiftTestCest &raquo;</span> Contributorgift <span style="color: #34495e; font-size: 70%;">40.82s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('7', this)"><span class="toggle">+</span>
+          <span class="quiet">GiftTestCest &raquo;</span> Contributorgift <span style="color: #34495e; font-size: 70%;">44.74s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer5">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer7">
 
 
       <tr>
@@ -1128,7 +1233,7 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-join-account-account-mail&quot;,&quot;jointest80815@jointest.com&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-join-account-account-mail&quot;,&quot;jointest375578@jointest.com&quot;</span></td>
       </tr>
 
       <tr>
@@ -1140,11 +1245,11 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-first-name-und-0-value&quot;,&quot;FN80815&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-first-name-und-0-value&quot;,&quot;FN375578&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-last-name-und-0-value&quot;,&quot;LN80815&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-last-name-und-0-value&quot;,&quot;LN375578&quot;</span></td>
       </tr>
 
       <tr>
@@ -1188,15 +1293,15 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-mail&quot;,&quot;gifttest80815@jointest.com&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-mail&quot;,&quot;gifttest375578@jointest.com&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-first-name-und-0-value&quot;,&quot;FN80815&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-first-name-und-0-value&quot;,&quot;FN375578&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-last-name-und-0-value&quot;,&quot;LN80815&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-last-name-und-0-value&quot;,&quot;LN375578&quot;</span></td>
       </tr>
 
       <tr>
@@ -1228,11 +1333,11 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-first-und-0-value&quot;,&quot;FN80815&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-first-und-0-value&quot;,&quot;FN375578&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-last-und-0-value&quot;,&quot;LN80815&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-last-und-0-value&quot;,&quot;LN375578&quot;</span></td>
       </tr>
 
       <tr>
@@ -1268,11 +1373,11 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN80815&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN375578&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN80815 LN80815&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN375578 LN375578&quot;</span></td>
       </tr>
 
       <tr>
@@ -1328,13 +1433,13 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('6', this)"><span class="toggle">+</span>
-          <span class="quiet">GiftTestCest &raquo;</span> Patrongift <span style="color: #34495e; font-size: 70%;">40.77s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('8', this)"><span class="toggle">+</span>
+          <span class="quiet">GiftTestCest &raquo;</span> Patrongift <span style="color: #34495e; font-size: 70%;">45s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer6">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer8">
 
 
       <tr>
@@ -1346,7 +1451,7 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-join-account-account-mail&quot;,&quot;jointest355848@jointest.com&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-join-account-account-mail&quot;,&quot;jointest594301@jointest.com&quot;</span></td>
       </tr>
 
       <tr>
@@ -1358,11 +1463,11 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-first-name-und-0-value&quot;,&quot;FN355848&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-first-name-und-0-value&quot;,&quot;FN594301&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-last-name-und-0-value&quot;,&quot;LN355848&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-last-name-und-0-value&quot;,&quot;LN594301&quot;</span></td>
       </tr>
 
       <tr>
@@ -1406,15 +1511,15 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-mail&quot;,&quot;gifttest355848@jointest.com&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-mail&quot;,&quot;gifttest594301@jointest.com&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-first-name-und-0-value&quot;,&quot;FN355848&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-first-name-und-0-value&quot;,&quot;FN594301&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-last-name-und-0-value&quot;,&quot;LN355848&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-last-name-und-0-value&quot;,&quot;LN594301&quot;</span></td>
       </tr>
 
       <tr>
@@ -1446,11 +1551,11 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-first-und-0-value&quot;,&quot;FN355848&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-first-und-0-value&quot;,&quot;FN594301&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-last-und-0-value&quot;,&quot;LN355848&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-member-card-membership-card-card-name-last-und-0-value&quot;,&quot;LN594301&quot;</span></td>
       </tr>
 
       <tr>
@@ -1486,11 +1591,11 @@
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN355848&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN594301&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN355848 LN355848&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN594301 LN594301&quot;</span></td>
       </tr>
 
       <tr>
@@ -1544,6 +1649,438 @@
    </tr>
 
 
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('9', this)"><span class="toggle">+</span>
+          <span class="quiet">JoinTest2Cest &raquo;</span> Individualtest <span style="color: #34495e; font-size: 70%;">61.11s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer9">
+
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;log in&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/user&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;Sign up&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/join/individual&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-join-account-account-mail&quot;,&quot;jointest28029@jointest.com&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-join-account-account-user-pass-pass1&quot;,&quot;testregisterPassword&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-join-account-account-user-pass-pass2&quot;,&quot;testregisterPassword&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-first-name-und-0-value&quot;,&quot;FN28029&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-last-name-und-0-value&quot;,&quot;LN28029&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-location-und-0-thoroughfare&quot;,&quot;123 testaddress1 st.&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-location-und-0-premise&quot;,&quot;apartment addr2&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-location-und-0-locality&quot;,&quot;testjoincity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-location-und-0-postal-code&quot;,&quot;10027&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-phone-und-0-value&quot;,&quot;1234567899&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-first-name-und-0-value&quot;,&quot;FN28029&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-last-name-und-0-value&quot;,&quot;LN28029&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-location-und-0-thoroughfare&quot;,&quot;123 testaddress1 st.&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-location-und-0-premise&quot;,&quot;apartment addr2&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-location-und-0-locality&quot;,&quot;testjoincity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-location-und-0-postal-code&quot;,&quot;10027&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I select option <span style="color: #732E81">&quot;#edit-profile-main-field-profile-title-und&quot;,&quot;Dr.&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I select option <span style="color: #732E81">&quot;#edit-profile-main-field-profile-location-und-0-country&quot;,&quot;United States&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I select option <span style="color: #732E81">&quot;#edit-profile-main-field-profile-location-und-0-administrative-area&quot;,&quot;New York&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I select option <span style="color: #732E81">&quot;#edit-profile-main-field-billing-title-und&quot;,&quot;Dr.&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I select option <span style="color: #732E81">&quot;#edit-profile-main-field-billing-location-und-0-country&quot;,&quot;United States&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I select option <span style="color: #732E81">&quot;#edit-profile-main-field-billing-location-und-0-administrative-area&quot;,&quot;New York&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;#edit-continue&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">5</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/join/individual/member-card&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">5</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;#edit-continue&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">5</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/join/individual/review&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I execute js <span style="color: #732E81">&quot;jQuery(&quot;#edit-membership-review-membership-terms&quot;).show()&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I check option <span style="color: #732E81">&quot;#edit-membership-review-membership-terms&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;#edit-continue&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">5</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/join/individual/payment-method&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN28029&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-owner&quot;,&quot;FN28029 LN28029&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-number&quot;,&quot;4242424242424242&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I select option <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-exp-month&quot;,&quot;12 - December&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I select option <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-exp-year&quot;,&quot;2025&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-commerce-payment-payment-details-credit-card-code&quot;,&quot;789&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">5</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;#edit-continue&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">10</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see <span style="color: #732E81">&quot;Thank You&quot;</span></td>
+      </tr>
+
+
+         
+         
+         
+     </table>
+
+
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('10', this)"><span class="toggle">+</span>
+          <span class="quiet">JoinTest2Cest &raquo;</span> Individualrenewtest <span style="color: #34495e; font-size: 70%;">18.61s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer10">
+
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;log in&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">2</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/user&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-name&quot;,&quot;jointest476423@jointest.com&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-pass&quot;,&quot;testregisterPassword&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;#edit-submit&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">10</span></td>
+      </tr>
+
+
+         
+         
+         
+     </table>
+
+
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('11', this)"><span class="toggle">+</span>
+          <span class="quiet">JoinTest2Cest &raquo;</span> Dualtest <span style="color: #34495e; font-size: 70%;">23.37s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer11">
+
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;log in&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/user&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;Sign up&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/join/dual&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-join-account-account-mail&quot;,&quot;jointest869427@jointest.com&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-join-account-account-user-pass-pass1&quot;,&quot;testregisterPassword&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-join-account-account-user-pass-pass2&quot;,&quot;testregisterPassword&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-first-name-und-0-value&quot;,&quot;FN869427&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-last-name-und-0-value&quot;,&quot;LN869427&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-location-und-0-thoroughfare&quot;,&quot;123 testaddress1 st.&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-location-und-0-premise&quot;,&quot;apartment addr2&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-location-und-0-locality&quot;,&quot;testjoincity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-location-und-0-postal-code&quot;,&quot;10027&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-profile-phone-und-0-value&quot;,&quot;1234567899&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-first-name-und-0-value&quot;,&quot;FN869427&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-last-name-und-0-value&quot;,&quot;LN869427&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-location-und-0-thoroughfare&quot;,&quot;123 testaddress1 st.&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-location-und-0-premise&quot;,&quot;apartment addr2&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-location-und-0-locality&quot;,&quot;testjoincity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;#edit-profile-main-field-billing-location-und-0-postal-code&quot;,&quot;10027&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I select option <span style="color: #732E81">&quot;#edit-profile-main-field-profile-title-und&quot;,&quot;Dr.&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I select option <span style="color: #732E81">&quot;#edit-profile-main-field-profile-location-und-0-country&quot;,&quot;United States&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I select option <span style="color: #732E81">&quot;#edit-profile-main-field-profile-location-und-0-administrative-area&quot;,&quot;New York&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I select option <span style="color: #732E81">&quot;#edit-profile-main-field-billing-title-und&quot;,&quot;Dr.&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I select option <span style="color: #732E81">&quot;#edit-profile-main-field-billing-location-und-0-country&quot;,&quot;United States&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I select option <span style="color: #732E81">&quot;#edit-profile-main-field-billing-location-und-0-administrative-area&quot;,&quot;New York&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;#edit-continue&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">5</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/join/dual/member-card&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;#edit-continue&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName failedStep">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">5</span></td>
+      </tr>
+
+
+         <tr >
+    <td class="error">
+        <br />
+<br />
+---------------------------<br />
+TESTS EXECUTION TERMINATED<br />
+---------------------------<br />
+
+    </td>
+</tr>
+
+         <tr><td class='error'><div class='screenshot'><img src='JoinTest2Cest.dualtest.fail.png' alt='failure screenshot'></div></td></tr>
+         <tr><td class='error'>See <a href='JoinTest2Cest.dualtest.fail.html' target='_blank'>HTML snapshot</a> of a failed page</td></tr>
+     </table>
+
+
+    </td>
+   </tr>
+
+
 
    <tr>
     <td>
@@ -1552,11 +2089,11 @@
       <table border="0">
        <tr>
         <td width="250" class="scenarioSuccess">Successful scenarios:</td>
-        <td class="scenarioSuccessValue"><strong>6</strong></td>
+        <td class="scenarioSuccessValue"><strong>9</strong></td>
        </tr>
        <tr>
         <td class="scenarioFailed">Failed scenarios:</td>
-        <td class="scenarioFailedValue"><strong>0</strong></td>
+        <td class="scenarioFailedValue"><strong>2</strong></td>
        </tr>
        <tr>
         <td class="scenarioSkipped">Skipped scenarios:</td>

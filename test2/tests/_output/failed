@@ -1,0 +1,2 @@
+tests/acceptance/DonateTestCest.php:donatetest
+tests/acceptance/JoinTest2Cest.php:dualtest
