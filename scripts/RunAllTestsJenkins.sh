@@ -1,5 +1,5 @@
 #!/bin/sh
 
-cd ~/autobots/test2
+cd /usr/share/jenkins
 
-/home/holyender/codecept/vendor/bin/codecept run --steps --html
+java -jar "jenkins.war" --httpPort=8081
