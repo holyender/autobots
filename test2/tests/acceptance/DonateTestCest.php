@@ -45,8 +45,8 @@ class DonateTestCest
         $I->fillField('Honoree First Name','testHonorFN');
         $I->fillField('Honoree Last Name','testHonorLN');
         $I->fillField('Honoree Organization Name','testHonorOrg');
-        
-        $I->fillField('E-mail address','testHonorEmail'.$tmp.'@gmail.com');
+        $I->fillField('#edit-customer-profile-shipping-field-email-und-0-value','testHonorEmail'.$tmp.'@jointest.com');
+        //$I->fillField('E-mail address','testHonorEmail'.$tmp.'@gmail.com');
         
         $I->fillField('First name','testFN');
         $I->fillField('Last name','testLN');
