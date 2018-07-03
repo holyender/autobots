@@ -1,19 +1,38 @@
 # Automation Tests AutoBots
 
-The purpose of this project is to automate integration and acceptance testing on a website.  This project contains acceptance test suites, visual pixel comparison testing, and scripts to help generate the tests. This project uses Jenkins as the CI/CD build tool for automating, Selenium/Codception/Chromedriver as the headless browser server and testing framework, BackstopJs/Puppeteer for visual comparison testing.
+The purpose of this project is to automate integration and acceptance testing on a website.  This project contains acceptance test suites, visual pixel comparison testing, and scripts to help generate the tests. This project uses Jenkins as the CI/CD build tool for automating, Selenium/Codception/Chromedriver as the headless browser server and testing framework, and BackstopJs/Puppeteer.
 
+The purpose of this project is an automated cotinuous intergration continuous deployment system that also automatically run acceptance testing on the project and build every time new code is committed by a developer. It can also be set to test the overall health and functionality of the website every interval of time.  If anything were to break or cease to function on the main website, then the automated build tool will pick up the error and immediately notify the developer before letting the new commit become prod.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This Project will be optimized for running Jenkins automation server on an Ubuntu 16.04 LTS Virtual Machine on Microsoft Azure Cloud. The languages that you may want to be familiar with are Python 3, Java 8, JavaScript(NodeJS), and Php 5.
+
+Without the building aspect of the project, there is a option to have the project run as a cron job. Only the testing portion of the project will run. The cron job will run the tests periodically.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+The Biggest and most important components of this project is Jenkins, Codeception, and BackstopJS. Most other pre-requisite and dependencies are there to run those three things. 
+
+Install PHP
 
 ```
-Give examples
+sudo apt install php-pear php-fpm php-dev php-zip php-curl php-xmlrpc php-gd php-mysql php-mbstring php-xml libapache2-mod-php
 ```
+
+Installing Composer
+
+```
+sudo apt install composer
+```
+
+cd to your desired project directory
+
+Installing Codeception
+```
+composer require codeception/codeception --dev
+```
+
 
 ### Installing
 
