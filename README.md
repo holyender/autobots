@@ -80,6 +80,21 @@ In this directory, the Backstop projected is already initiated with the 50 most 
 ```
 sudo backstop test
 ```
+If tests all pass or if the screenshots are satisfactory, then enter
+```
+backstop approve
+```
+to update the reference snapshots so that it will be the base for next set of tests.
+
+
+for the output and report. go to 
+```
+~/autobots/backstopjs/backstop_data/html_reports/index.html
+```
+
+### Codeception
+Codeception is a PHP testing framework that uses Selenium Webdriver or Chromedriver as headless browser controller.
+
 
 
 And repeat
