@@ -12,7 +12,9 @@ Without the building aspect of the project, there is a option to have the projec
 
 ### Prerequisites
 
-The Biggest and most important components of this project is Jenkins, Codeception, and BackstopJS. Most other pre-requisite and dependencies are there to run those three things. 
+The Biggest and most important components of this project is Jenkins, Codeception, and BackstopJS. Most other pre-requisite and dependencies are there to run those three things. lets try to avoid dependency hell.
+Get Azure Ubuntu 16.04 server
+On the server,
 
 Install PHP
 
@@ -26,23 +28,59 @@ Installing Composer
 sudo apt install composer
 ```
 
-cd to your desired project directory
+
+cd to your desired project directory then
 
 Installing Codeception
 ```
 composer require codeception/codeception --dev
 ```
 
+To install BackstopJs, We need NodeJS and npm
+Installing NodeJs and npm
+```
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+Installing BackstopJS
+```
+npm install -g backstopjs
+```
 
-### Installing
+### Optional Prerequisites 
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Installing Java and Jenkins
 
 ```
-Give the example
+sudo apt-add-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+java -version
 ```
+
+```
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt-get update
+sudo apt-get install jenkins
+
+#run
+java -jar "/usr/share/jenkins/jenkins.war" --httpPort=8081
+```
+
+### Getting Things to Work
+
+
+### BackstopJS
+Go into the autobots directory then the backstopjs directory
+```
+cd autobots/backstopjs
+```
+In this directory, the Backstop projected is already initiated with the 50 most visited pages. to test enter
+```
+sudo backstop test
+```
+
 
 And repeat
 
