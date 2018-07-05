@@ -6,6 +6,7 @@ class GiftTestCest{
 		$tmp = (string)rand(1,900000);
 		$I->amOnPage('/');
 		$I->click('log in');
+		$I->wait(2);
 		$I->amOnPage('/user');
 		$I->click('Sign up');
 		$I->amOnPage('/gift/individual');

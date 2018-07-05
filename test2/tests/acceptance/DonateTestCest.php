@@ -17,6 +17,7 @@ class DonateTestCest
     {
         $I->amOnPage('/');
         $I->click('log in');
+        $I->wait(2);
         $I->amOnPage('/user');
     }
 
