@@ -31,7 +31,7 @@ class JoinTestCest
 
         $tmp = (string)rand(1,50000);
     	$I->amOnPage('/');
-    	$I->click('log in');
+    	#$I->click('log in');
     	$I->amOnPage('/user');
     	$I->click('Sign up');
     	$I->amOnPage('/join/patron');

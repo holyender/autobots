@@ -38,7 +38,7 @@ class JoinTest2Cest
         $renewTmp = $tmp;
 
     	$I->amOnPage('/');
-    	$I->click('log in');
+    	#$I->click('log in');
     	$I->amOnPage('/user');
     	$I->click('Sign up');
     	$I->amOnPage('/join/individual');
@@ -106,8 +106,8 @@ class JoinTest2Cest
     public function individualrenewtest(AcceptanceTester $I){
 
         $I->amOnPage('/');
-        $I->click('log in');
-        $I->wait(2);
+        #$I->click('log in');
+        #$I->wait(2);
         $I->amOnPage('/user');
         $I->fillField('#edit-name', 'jointest476423@jointest.com');
         $I->fillField('#edit-pass', 'testregisterPassword');
@@ -123,7 +123,7 @@ class JoinTest2Cest
     public function dualtest(AcceptanceTester $I){
         $tmp = (string)rand(1,900000);
         $I->amOnPage('/');
-        $I->click('log in');
+        #$I->click('log in');
         $I->amOnPage('/user');
         $I->click('Sign up');
         $I->amOnPage('/join/dual');
@@ -192,7 +192,7 @@ class JoinTest2Cest
     public function familytest(AcceptanceTester $I){
         $tmp = (string)rand(1,900000);
         $I->amOnPage('/');
-        $I->click('log in');
+        #$I->click('log in');
         $I->amOnPage('/user');
         $I->click('Sign up');
         $I->amOnPage('/join/family');
@@ -259,7 +259,7 @@ class JoinTest2Cest
     public function visionarytest(AcceptanceTester $I){
         $tmp = (string)rand(1,900000);
         $I->amOnPage('/');
-        $I->click('log in');
+        #$I->click('log in');
         $I->amOnPage('/user');
         $I->click('Sign up');
         $I->amOnPage('/join/visionary');
@@ -326,7 +326,7 @@ class JoinTest2Cest
     public function contributortest(AcceptanceTester $I){
         $tmp = (string)rand(1,900000);
         $I->amOnPage('/');
-        $I->click('log in');
+        #$I->click('log in');
         $I->amOnPage('/user');
         $I->click('Sign up');
         $I->amOnPage('/join/contributor');
@@ -393,7 +393,7 @@ class JoinTest2Cest
     public function patrontest(AcceptanceTester $I){
         $tmp= (string)rand(1,900000);
         $I->amOnPage('/');
-        $I->click('log in');
+        #$I->click('log in');
         $I->amOnPage('/user');
         $I->click('Sign up');
         $I->amOnPage('/join/patron');

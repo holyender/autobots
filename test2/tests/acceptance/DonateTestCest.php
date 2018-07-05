@@ -16,8 +16,8 @@ class DonateTestCest
     public function logintest(AcceptanceTester $I)
     {
         $I->amOnPage('/');
-        $I->wait(2);
-        $I->click('log in');
+        #$I->wait(2);
+        #$I->click('log in');
 
         $I->amOnPage('/user');
     }

@@ -123,6 +123,11 @@ If that doesnt work
 ```
 sudo npm i -g backstopjs --unsafe-perm=true --allow-root
 ```
+After BackstopJs is installed, cd into the backstopjs directory and
+```
+sudo backstop test
+```
+To do visual pixel comparison test on the current set of web urls
 
 ### Optional Prerequisites 
 
