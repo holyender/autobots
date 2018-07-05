@@ -179,7 +179,12 @@ for the output and report. go to
 ### Codeception
 Codeception is a PHP testing framework that uses Selenium Webdriver or Chromedriver as headless browser controller.
 
-## Running the tests
+## Cron Job for the Tests
+
+set up cron job using
+```
+crontab -e
+```
 
 
 ### Break down into end to end tests
