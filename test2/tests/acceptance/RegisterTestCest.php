@@ -13,7 +13,7 @@ class RegisterTestCest
 
     public function registertest(AcceptanceTester $I){
     	$I->amOnPage('/');
-    	$I->click('log in');
+    	#$I->click('log in');
     	$I->amOnPage('/user');
     	$I->click('Sign up');
     	$I->amOnPage('/user/register');
