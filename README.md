@@ -58,6 +58,49 @@ Codeception will technically run but since we do not have chromedriver or seleni
 
 ### For Selenium Server
 
+The Selenium server automates browsers. The server is needed to run Webdriver/Chromedriver. For more info go to www.selemiumhq.org
+Selenium server artifact is written in Java and requires Java 8 JDK or JRE
+
+To Install Java 8 Enter the following commands
+```
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt update
+sudo apt install oracle-java8-installer
+```
+Note you may need to click Ok and accept a few license agreements from Oracle
+
+To Install Selenium Server
+```
+wget -N http://selenium-release.storage.googleapis.com/3.13/selenium-server-standalone-3.13.0.jar -P ~/
+sudo mv -f ~/selenium-server-standalone-3.13.0.jar /usr/local/bin/selenium-server-standalone.jar
+sudo chown root:root /usr/local/bin/selenium-server-standalone.jar
+sudo chmod 0755 /usr/local/bin/selenium-server-standalone.jar
+
+```
+
+To Install Google Chrome:
+```
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
+sudo apt-get update 
+sudo apt-get install google-chrome-stable
+```
+
+To Install Chrome-driver
+```
+wget -N http://chromedriver.storage.googleapis.com/$CHROME_DRIVER_VERSION/chromedriver_linux64.zip -P ~/
+unzip ~/chromedriver_linux64.zip -d ~/
+rm ~/chromedriver_linux64.zip
+sudo mv -f ~/chromedriver /usr/local/bin/chromedriver
+sudo chown root:root /usr/local/bin/chromedriver
+sudo chmod 0755 /usr/local/bin/chromedriver
+```
+
+xvfb stands for X virtual framebuffer which acts as an in memory display server to run out tests headlessly
+To Install xvfb
+```
+sudo apt install xvfb
+```
 
 
 To install BackstopJs, We need NodeJS and npm
