@@ -1,4 +1,4 @@
- #!/bin/sh
+#!/bin/sh
 xvfb-run java -Dwebdriver.chrom.driver=/usr/local/bin/chromedriver -jar /usr/local/bin/selenium-server-standalone.jar &
 
 cd ~
