@@ -6,8 +6,9 @@ cd autobots
 git pull
 cd test2
 codecept run --steps --html
-
+echo "codecept test finished"
 cd ~
 cd autobots
 cd backstopjs
 sudo backstop test
+echo "backstop test finished"
