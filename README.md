@@ -10,16 +10,18 @@ This Project will be optimized for running Jenkins automation server on an Ubunt
 
 Without the building aspect of the project, there is a option to have the project run as a cron job. Only the testing portion of the project will run. The cron job will run the tests periodically.
 
-### Prerequisites
+## Step-by-Step Set Up of Environment
 
-The Biggest and most important components of this project is Jenkins, Codeception, and BackstopJS. Most other pre-requisite and dependencies are there to run those three things. lets try to avoid dependency hell.
+The Biggest and most important components of this project is Jenkins, Codeception, and BackstopJS. Most other pre-requisite and dependencies are there to run those things. lets try to avoid dependency hell.
 Get Azure Ubuntu 16.04 server
 On the server,
+
+###For Codeception
 
 Install PHP
 
 ```
-sudo apt install php-pear php-fpm php-dev php-zip php-curl php-xmlrpc php-gd php-mysql php-mbstring php-xml libapache2-mod-php
+sudo apt install php-pear php-fpm php-dev php-zip php-curl php-gd php-mysql php-xmlrpc php-mbstring php-xml libapache2-mod-php
 ```
 
 Installing Composer
@@ -35,6 +37,28 @@ Installing Codeception
 ```
 composer require codeception/codeception --dev
 ```
+Then run codeception using
+```
+php vendor/bin/codecept
+```
+Boostrap the testing environment using
+```
+php vendor/bin/codecept bootstrap
+```
+Now to make codecept a global command use the following then refresh .bashrc
+```
+export PATH=/home/bliu/codecept/vendor/bin:$PATH
+source ~/.bashrc
+```
+At this point in time if you were to cd to the test suite directory and type
+```
+codecept run --steps --html
+```
+Codeception will technically run but since we do not have chromedriver or selenium set up, it will just return errors
+
+###For Selenium Server
+
+
 
 To install BackstopJs, We need NodeJS and npm
 Installing NodeJs and npm
