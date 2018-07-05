@@ -30,7 +30,7 @@
       "requireSameDimensions": true
     },
     {
-      "label": "",
+      "label": "Homepage*",
       "cookiePath": "backstop_data/engine_scripts/cookies.json",
       "url": "http://www.911memorial.org/",
       "referenceUrl": "",
@@ -45,7 +45,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0.1,
+      "misMatchThreshold" : 1,
       "requireSameDimensions": true
     },
     {
@@ -340,7 +340,7 @@
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
-      "delay": 5000,
+      "delay": 15000,
       "hideSelectors": [],
       "removeSelectors": [],
       "hoverSelector": "",
@@ -542,7 +542,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0.1,
+      "misMatchThreshold" : 2,
       "requireSameDimensions": true
     },
     {

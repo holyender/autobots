@@ -102,6 +102,12 @@ To Install xvfb
 sudo apt install xvfb
 ```
 
+To run Tests cd to test suite directory then
+```
+codecept run --steps --html
+```
+
+
 
 To install BackstopJs, We need NodeJS and npm
 Installing NodeJs and npm
@@ -112,6 +118,10 @@ sudo apt-get install -y nodejs
 Installing BackstopJS
 ```
 npm install -g backstopjs
+```
+If that doesnt work
+```
+sudo npm i -g backstopjs --unsafe-perm=true --allow-root
 ```
 
 ### Optional Prerequisites 
