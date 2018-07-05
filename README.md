@@ -16,7 +16,7 @@ The Biggest and most important components of this project is Jenkins, Codeceptio
 Get Azure Ubuntu 16.04 server
 On the server,
 
-###For Codeception
+### For Codeception & Dependencies
 
 Install PHP
 
@@ -56,7 +56,7 @@ codecept run --steps --html
 ```
 Codeception will technically run but since we do not have chromedriver or selenium set up, it will just return errors
 
-###For Selenium Server
+### For Selenium Server
 
 
 
