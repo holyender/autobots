@@ -58,7 +58,7 @@ Codeception will technically run but since we do not have chromedriver or seleni
 
 ### For Selenium Server
 
-The Selenium server automates browsers. The server is needed to run Webdriver/Chromedriver. For more info go to www.selemiumhq.org
+The Selenium server automates browsers. The server is needed to run Webdriver/Chromedriver. For more info go to [Selenium HQ](www.selemiumhq.org)
 Selenium server artifact is written in Java and requires Java 8 JDK or JRE
 
 To Install Java 8 Enter the following commands
