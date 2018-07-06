@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo"cron job start"
+echo "cron job start"
 xvfb-run java -Dwebdriver.chrom.driver=/usr/local/bin/chromedriver -jar /usr/local/bin/selenium-server-standalone.jar &
 
 #cd ~
@@ -10,6 +10,7 @@ xvfb-run java -Dwebdriver.chrom.driver=/usr/local/bin/chromedriver -jar /usr/loc
 echo "codecept test start"
 cd /home/bliu/autobots/test2/
 /home/bliu/codecept/vendor/bin/codecept run --steps --html
+
 echo "codecept test finished"
 #cd ~
 #cd autobots
