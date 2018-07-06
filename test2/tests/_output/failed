@@ -1,11 +1,2 @@
-tests/acceptance/DonateTestCest.php:logintest
 tests/acceptance/GiftTestCest.php:individualgift
-tests/acceptance/JoinTest2Cest.php:individualtest
-tests/acceptance/JoinTest2Cest.php:individualrenewtest
-tests/acceptance/JoinTest2Cest.php:dualtest
-tests/acceptance/JoinTest2Cest.php:familytest
-tests/acceptance/JoinTest2Cest.php:visionarytest
-tests/acceptance/JoinTest2Cest.php:contributortest
-tests/acceptance/JoinTest2Cest.php:patrontest
-tests/acceptance/JoinTestCest.php:jointest
 tests/acceptance/RegisterTestCest.php:registertest
