@@ -1,14 +1,17 @@
 #!/bin/sh
+
 xvfb-run java -Dwebdriver.chrom.driver=/usr/local/bin/chromedriver -jar /usr/local/bin/selenium-server-standalone.jar &
 
-cd ~
-cd autobots
-git pull
-cd test2
-codecept run --steps --html
+#cd ~
+#cd autobots
+#git pull
+#cd test2
+cd /home/bliu/autobots/test2/
+/home/bliu/codecept/vendor/bin/codecept run --steps --html
 echo "codecept test finished"
-cd ~
-cd autobots
-cd backstopjs
-sudo backstop test
+#cd ~
+#cd autobots
+#cd backstopjs
+cd /home/bliu/autobots/backstopjs
+sudo /usr/bin/backstop test
 echo "backstop test finished"
