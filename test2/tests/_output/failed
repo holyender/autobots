@@ -1,2 +1,1 @@
-tests/acceptance/GiftTestCest.php:individualgift
-tests/acceptance/RegisterTestCest.php:registertest
+tests/acceptance/GiftTestCest.php:familygift
