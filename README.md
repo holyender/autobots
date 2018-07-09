@@ -190,6 +190,17 @@ put the following in the crontab file
 */30 * * * * export DISPLAY=:0; /home/username/autobots/scripts/cronRunScript.sh >> /home/username/cron.log 2>&1
 ```
 
+If backstop does not run then try running cron as root. 
+
+```
+sudo su
+crontab -e
+```
+
+then add the command above into the root's crontab
+
+The cron run script can send an email report to you, edit the email addr in the script file at 
+autobots/scripts/cronRunScript.sh
 
 ### Break down into end to end tests
 
