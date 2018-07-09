@@ -31,3 +31,8 @@ jenkins folder
 ##.slide-media.slide-video
 
 chromedriver --no-sandbox --disable-dev-shm-usage --url-base=/wd/hub
+
+
+
+send email with attchemnt
+mutt -s "Subject" -a /home/bliu/autobots/test2/tests/_output/report.html -- bliu@911memorial.org < /home/bliu/autobots/backstopjs/backstop_data/html_report/index.html
