@@ -185,6 +185,10 @@ set up cron job using
 ```
 crontab -e
 ```
+put the following in the crontab file
+```
+*/30 * * * * export DISPLAY=:0; /home/username/autobots/scripts/cronRunScript.sh >> /home/username/cron.log 2>&1
+```
 
 
 ### Break down into end to end tests
