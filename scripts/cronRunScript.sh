@@ -10,6 +10,7 @@ xvfb-run java -Dwebdriver.chrom.driver=/usr/local/bin/chromedriver -jar /usr/loc
 echo "codecept test start"
 cd /home/bliu/autobots/test2/
 /home/bliu/codecept/vendor/bin/codecept run --steps --html
+#/home/bliu/codecept/vendor/bin/codecept run acceptance/DonateTestCest.php --steps --html
 
 echo "codecept test finished"
 #cd ~
@@ -29,6 +30,7 @@ zip -r backstop_report.zip autobots/backstopjs/backstop_data/html_report/
 
 mutt -s "Report!" -a /home/bliu/autobots/test2/tests/_output/report.html -a /home/bliu/backstop_report.zip -- rnagaraja@911memorial.org
 mutt -s "Subject" -a /home/bliu/autobots/test2/tests/_output/report.html -a /home/bliu/backstop_report.zip -- bliu@911memorial.org
+
 
 
 echo "\n mail sent cron run complete"
