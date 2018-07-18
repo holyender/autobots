@@ -33,7 +33,7 @@ cd /home/bliu
 
 sudo cp /home/bliu/autobots/test2/tests/_output/report.html /var/www/html/
 
-sudp cp /home/bliu/autobots/backstopjs/backstop_data/ci_report/xunit.xml /var/www/html/
+sudo cp /home/bliu/autobots/backstopjs/backstop_data/ci_report/xunit.xml /var/www/html/
 
 sudo cp -R /home/bliu/autobots/backstopjs/backstop_data /var/www/html/
 

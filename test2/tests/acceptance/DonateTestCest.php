@@ -37,7 +37,7 @@ class DonateTestCest
 
         )));
         */
-        $I->wait(10);
+        $I->wait(2);
 
 
         $I->checkOption('#edit-amount-amount-500');
@@ -80,7 +80,7 @@ class DonateTestCest
         //$I->selectOption('My billing information is the same as my delivery information.','customer_profile_billing[commerce_customer_profile_copy]');
         //$I->click('//form/*[@type=submit]');
 
-        $I->wait(10);
+        $I->wait(2);
 
         //$I->click('Donate');
         $I->click('op'); //click donate button name of button is 'op'
@@ -94,7 +94,7 @@ class DonateTestCest
         $I->executeJS('jQuery("#ui-id-1").show()');
         //$I->makeScreenshot();
 
-        $I->wait(10);
+        $I->wait(2);
 
         $I->click('No, one-time only');
         //$I->makeScreenshot();
@@ -110,7 +110,7 @@ class DonateTestCest
         $I->selectOption('#edit-commerce-payment-payment-details-credit-card-exp-year', '2025');
         $I->fillField('#edit-commerce-payment-payment-details-credit-card-code', '789');
 
-        $I->wait(10);
+        $I->wait(2);
 
         $I->click('op');
 
@@ -118,7 +118,7 @@ class DonateTestCest
 
         $I->see('Thank You');
 
-        $I->wait(10);
+        $I->wait(2);
 
 
 
