@@ -339,7 +339,7 @@
       "url": "https://nineelevenmemorialstg.prod.acquia-sites.com/names-memorial-0",
       "referenceUrl": "",
       "readyEvent": "",
-      "readySelector": "",
+      "readySelector": "block-menu-menu-footer-menu",
       "delay": 15000,
       "hideSelectors": [],
       "removeSelectors": [],
