@@ -207,6 +207,23 @@ autobots/scripts/cronRunScript.sh
 
 ### And coding style tests
 
+## Troubleshooting
+
+If crontab does not run and running codeception returns errors such as
+```
+  [Facebook\WebDriver\Exception\SessionNotCreatedException] Unable to create new service: ChromeDriverService
+```
+chances are there is a hanging process xvfb or hanging java process running the selenium server
+the default port number for this set up is 4444
+use the following command
+```
+netstat -anp|grep "4444"
+```
+to get the PID of the process holding up the port
+then kill the hanging process by using
+```
+kill -9 'PID'
+```
 
 ## Deployment
 
