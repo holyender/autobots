@@ -225,6 +225,11 @@ then kill the hanging process by using
 kill -9 'PID'
 ```
 
+To get rid of chrome zombies that may accumulate if you enter ps -A use
+```
+pkill -f "(chrome)?(--headless)"
+```
+
 ## Deployment
 
 
