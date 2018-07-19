@@ -38,3 +38,5 @@ sudo cp /home/bliu/autobots/backstopjs/backstop_data/ci_report/xunit.xml /var/ww
 sudo cp -R /home/bliu/autobots/backstopjs/backstop_data /var/www/html/
 
 echo "\n mail sent cron run complete"
+
+date
