@@ -95,7 +95,9 @@ sudo mv -f ~/chromedriver /usr/local/bin/chromedriver
 sudo chown root:root /usr/local/bin/chromedriver
 sudo chmod 0755 /usr/local/bin/chromedriver
 ```
-
+```
+chrome --headless --disable-gpu --screenshot https://www.njit.edu/
+```
 xvfb stands for X virtual framebuffer which acts as an in memory display server to run out tests headlessly
 To Install xvfb
 ```

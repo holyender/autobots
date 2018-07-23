@@ -42,3 +42,6 @@ echo "\n mail sent cron run complete"
 date
 
 pkill Xvfb
+
+
+sudo mv html_report ARhtml_$(date +%y%m%d_%H%M%S)
