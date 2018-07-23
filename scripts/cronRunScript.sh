@@ -40,3 +40,5 @@ sudo cp -R /home/bliu/autobots/backstopjs/backstop_data /var/www/html/
 echo "\n mail sent cron run complete"
 
 date
+
+pkill Xvfb
