@@ -35,7 +35,6 @@ sudo cp /home/bliu/autobots/test2/tests/_output/report.html /var/www/html/
 
 sudo cp /home/bliu/autobots/backstopjs/backstop_data/ci_report/xunit.xml /var/www/html/
 
-sudo cp -R /home/bliu/autobots/backstopjs/backstop_data /var/www/html/
 
 echo "\n mail sent cron run complete"
 
@@ -44,4 +43,6 @@ date
 pkill Xvfb
 
 
-sudo mv html_report ARhtml_$(date +%y%m%d_%H%M%S)
+sudo mv /home/bliu/autobots/backstopjs/backstop_data/html_report /home/bliu/autobots/backstopjs/backstop_data/ARhtml_$(date +%y%m%d_%H%M%S)
+
+sudo cp -R /home/bliu/autobots/backstopjs/backstop_data /var/www/html/
