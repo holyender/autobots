@@ -43,6 +43,8 @@ date
 pkill Xvfb
 
 
+sudo cp -R /home/bliu/autobots/test2/tests/_output /home/bliu/autobots/backstopjs/backstop_data/html_report
+
 sudo mv /home/bliu/autobots/backstopjs/backstop_data/html_report /home/bliu/autobots/backstopjs/backstop_data/ARhtml_$(date +%y%m%d_%H%M%S)
 
 sudo cp -R /home/bliu/autobots/backstopjs/backstop_data /var/www/html/
