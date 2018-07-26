@@ -51,6 +51,8 @@ for($index=0; $index < $indexCount; $index++) {
         if (substr("$dirArray[$index]", 0, 6) == "ARhtml"){ // don't list hidden files
         print("<tr><td><a href=\"$path$dirArray[$index]\">$dirArray[$index]</a></td>");
         print("<td>");
+        print("<tr><td><a href=\"$path$dirArray[$index]\_output\">$dirArray[$index]</a></td>");
+        print("<td>");
         print(date("Y-m-d H:i:s", filectime($path.$dirArray[$index])));
         print("</td>");
         print("</tr>\n");
