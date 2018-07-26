@@ -41,7 +41,7 @@ if(isset($_POST['Submit'])) {
     $indexCount = count($dirArray);
     //Print ("$indexCount files<br>\n");
     // sort 'em
-    sort($dirArray);
+    rsort($dirArray);
 
 // print 'em
 print("<table cellpadding='10'>");
