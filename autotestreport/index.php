@@ -50,7 +50,7 @@ print("<TR><TH>Visual Regression Report</TH><TH>Acceptance Report</TH><th>Date</
 for($index=0; $index < $indexCount; $index++) {
         if (substr("$dirArray[$index]", 0, 6) == "ARhtml"){ // don't list hidden files
         print("<tr><td><a href=\"$path$dirArray[$index]/index.html\">$dirArray[$index]</a></td>");
-        print("<td>");
+        //print("<td>");
         print("<td><a href=\"$path$dirArray[$index]/_output/report.html\">$dirArray[$index]/_output</a></td>");
         print("<td>");
         print(date("Y-m-d H:i:s", filectime($path.$dirArray[$index])));
