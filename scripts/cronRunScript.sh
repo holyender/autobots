@@ -6,8 +6,9 @@ sudo pkill Xvfb
 
 sudo pkill java
 
-xvfb-run java -Dwebdriver.chrom.driver=/usr/local/bin/chromedriver -jar /usr/local/bin/selenium-server-standalone.jar &
+sudo xvfb-run java -Dwebdriver.chrom.driver=/usr/local/bin/chromedriver -jar /usr/local/bin/selenium-server-standalone.jar &
 
+echo "xvfb is up"
 #cd ~
 #cd autobots
 #git pull
