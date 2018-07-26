@@ -1,6 +1,11 @@
 #!/bin/sh
 
 echo "cron job start"
+
+sudo pkill Xvfb
+
+sudo pkill java
+
 xvfb-run java -Dwebdriver.chrom.driver=/usr/local/bin/chromedriver -jar /usr/local/bin/selenium-server-standalone.jar &
 
 #cd ~
