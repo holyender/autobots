@@ -40,8 +40,9 @@ echo "\n mail sent cron run complete"
 
 date
 
-pkill Xvfb
+sudo pkill Xvfb
 
+sudo pkill java
 
 sudo cp -R /home/bliu/autobots/test2/tests/_output /home/bliu/autobots/backstopjs/backstop_data/html_report
 

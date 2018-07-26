@@ -1,0 +1,154 @@
+body {
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+    background: #e2eaed;
+    font-family: verdana,helvetica,arial,sans-serif;
+}
+ a {
+      text-decoration:none;
+   }
+.header-region {
+    display: inline-block;
+    width: 750px;
+    /*background:#F0F0F0;
+    border:1px solid #CCC;*/
+    
+}
+.content-region {
+    /*display: inline-block;*/
+    /*width: 850px;*/
+    background:#F0F0F0;
+    /*border:1px solid #CCC;*/
+    height:600px;
+}
+
+
+.hidden{
+       display:none;
+    }
+
+#header_title{
+    margin-top: 50px;
+    color: #4c4742;
+    font-family: verdana,helvetica,arial,sans-serif;
+    font-size: 23px;
+}
+
+#logo {
+    float:left;
+    margin-top: 30px;
+    opacity: 0.9;
+}
+
+#logout_btn {
+    float:right;
+    display: inline-block;
+    clear: both;
+    margin-bottom:5px;
+    margin-right: 55px;
+}
+
+
+
+.panel-cus{
+
+    padding: 10px 40px 30px;
+    font-size: 12px;
+    margin:10px auto;
+    width:800px;
+    height:520px;
+}
+
+
+
+
+
+.tool_button {
+    /*background-color: #ccc;*/
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius:5px;
+    cursor: pointer;
+    width:60px;
+    height:20px;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 5px;
+    background-color: #428bca;
+    border-color: #357ebd;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+
+.tool_button:hover {
+    border: none;
+    /*background:red;*/
+    width:60px;
+    height:20px;
+    box-shadow: 0px 0px 1px #777;
+}
+
+.tool_button:disabled {
+    border: none;
+    /*background: #5cb85c;*/
+    color: #444;
+    box-shadow: 0px 0px 1px #777;
+    opacity: 0.4;
+    width:60px;
+    height:20px;
+    cursor: default;
+}
+
+
+
+
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 8px 20px;
+
+
+
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+
+
+th{
+    color: #666;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 16px;
+    text-align: left;
+}
+
+
+
+
