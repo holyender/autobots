@@ -6,7 +6,7 @@ pkill Xvfb
 
 pkill java
 
-sudo xvfb-run java -Dwebdriver.chrom.driver=/usr/local/bin/chromedriver -jar /usr/local/bin/selenium-server-standalone.jar &
+xvfb-run java -Dwebdriver.chrom.driver=/usr/local/bin/chromedriver -jar /usr/local/bin/selenium-server-standalone.jar &
 
 sleep 10s
 
