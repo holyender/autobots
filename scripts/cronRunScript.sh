@@ -2,9 +2,11 @@
 
 echo "cron job start"
 
-sudo pkill Xvfb
-sudo pkill xvfb-run
-sudo pkill java
+#sudo pkill Xvfb
+#sudo pkill xvfb-run
+#sudo pkill java
+
+sleep 2s
 
 xvfb-run java -Dwebdriver.chrome.driver=/usr/local/bin/chromedriver -jar /usr/local/bin/selenium-server-standalone.jar &
 
@@ -48,9 +50,9 @@ echo "\n mail sent cron run complete"
 
 date
 
-sudo pkill Xvfb
+#sudo pkill Xvfb
 
-sudo pkill java
+#sudo pkill java
 
 sudo cp -R /home/bliu/autobots/test2/tests/_output /home/bliu/autobots/backstopjs/backstop_data/html_report
 
