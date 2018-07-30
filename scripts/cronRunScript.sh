@@ -5,10 +5,11 @@ echo "cron job start"
 #sudo pkill Xvfb
 #sudo pkill xvfb-run
 #sudo pkill java
+#sudo pkill chrome
 
 sleep 2s
 
-sudo xvfb-run java -Dwebdriver.chrome.driver=/usr/local/bin/chromedriver -jar /usr/local/bin/selenium-server-standalone.jar &
+xvfb-run java -Dwebdriver.chrome.driver=/usr/local/bin/chromedriver -jar /usr/local/bin/selenium-server-standalone.jar &
 
 sleep 10s
 
