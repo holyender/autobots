@@ -8,7 +8,7 @@
 <div id="page" class="container">
       <header class="header-region" role="banner">
          <div id="logo"><img src="./image/logo.png" alt="Home" title="Home"></div>
-         <h2 id="header_title">AUTOMATION TEST REPORT SYSTEM</h2>
+         <h2 id="header_title">TEST AUTOMATION ONLINE</h2>
          <div class="demo-info" style="margin-bottom:10px">
             <div class="demo-tip icon-tip">&nbsp;</div>
             <div></div>
