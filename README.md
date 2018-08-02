@@ -10,6 +10,9 @@ This Project will be optimized for running Jenkins automation server on an Ubunt
 
 Without the building aspect of the project, there is a option to have the project run as a cron job. Only the testing portion of the project will run. The cron job will run the tests periodically.
 
+![Alt text](dependencytreecodeception.jpg "System Architecture")
+
+
 ## Step-by-Step Set Up of Environment
 
 The Biggest and most important components of this project is Jenkins, Codeception, and BackstopJS. Most other pre-requisite and dependencies are there to run those things. lets try to avoid dependency hell.
