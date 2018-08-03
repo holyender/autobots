@@ -1,6 +1,6 @@
 # Automation Tests AutoBots
 
-The purpose of this project is to automate integration and acceptance testing on a website.  This project contains acceptance test suites, visual pixel comparison testing, and scripts to help generate the tests. This project uses Jenkins as the CI/CD build tool for automating, Selenium/Codception/Chromedriver as the headless browser server and testing framework, and BackstopJs/Puppeteer.
+The purpose of this project is to automate integration and acceptance testing on a website.  This project contains acceptance test suites, visual pixel comparison testing, and scripts to help generate the tests. This project uses Selenium/Codception/Chromedriver as the headless browser server and testing framework, and BackstopJs/Puppeteer.
 
 The purpose of this project is an automated cotinuous intergration continuous deployment system that also automatically run acceptance testing on the project and build every time new code is committed by a developer. It can also be set to test the overall health and functionality of the website every interval of time.  If anything were to break or cease to function on the main website, then the automated build tool will pick up the error and immediately notify the developer before letting the new commit become prod.
 
@@ -260,23 +260,11 @@ most of codeceptions problems comes from chromedriver not talking or responding.
 Each test run generates about 50MB of data including backstop images and codeception snapshots. if the system suddenly stop working and restarting does not fix it, it is likely that the azure server has run out of hdd space. 
 When deleting old reports delete the ones in autobots dir as well as the ones in /var/www/html/reports/backstop_data as they are copies
 
-## Deployment
-
 
 ## Built With
 
 * [Codeception](https://codeception.com) - Testing Framework built on top of PHPUnit
 
-## Contributing
-
-
-## Versioning
-
-
 ## Authors
 
 * **holyender** - *Initial work* - [holyender](https://github.com/holyender)
-
-## License
-
-## Acknowledgments
