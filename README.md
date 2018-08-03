@@ -15,7 +15,7 @@ Without the building aspect of the project, there is a option to have the projec
 
 ## Step-by-Step Set Up of Environment
 
-The Biggest and most important components of this project is Jenkins, Codeception, and BackstopJS. Most other pre-requisite and dependencies are there to run those things. lets try to avoid dependency hell.
+The Biggest and most important components of this project are Codeception, and BackstopJS. Most other pre-requisite and dependencies are there to run those things. lets try to avoid dependency hell.
 Get Azure Ubuntu 16.04 server
 On the server,
 
@@ -183,6 +183,16 @@ for the output and report. go to
 
 ### Codeception
 Codeception is a PHP testing framework that uses Selenium Webdriver or Chromedriver as headless browser controller.
+refer to the architecture model for its main dependencies. generally it is cooperative. the only weak link is the communication between codeception and chromedriver or if you want to use another headless browser driver
+
+headless browser means a browser with no gui. backstopjs uses that automatically but with selenium stand alone server on the azure server we use Xvfb since the server cant process graphics or visual stuff at all.
+
+to run codeception independently go to
+```
+autobots/test2
+codecept run --steps --html
+```
+it is highy customizable for anything but I like the html report that it spits out.
 
 ## Cron Job for the Tests
 
@@ -208,12 +218,12 @@ The cron run script can send an email report to you, edit the email addr in the 
 autobots/scripts/cronRunScript.sh
 
 
-## Flask Website for Reports
 
-### Break down into end to end tests
+## PHP Website for Reports
 
+The website that publishes all the reports is a php page accessible from the server ip
+the report is timestamped and it keeps track of all the reports we have run
 
-### And coding style tests
 
 ## Troubleshooting
 
@@ -237,6 +247,18 @@ To get rid of chrome zombies that may accumulate if you enter ps -A use
 ```
 pkill -f "(chrome)?(--headless)"
 ```
+
+sometimes the server bugs out because it always has to communicate with chrome and the website. 
+in that case, run the script (without sudo)
+```
+~/autobots/scripts/resetseleniumwebdriver.sh
+```
+this script kills the dead or dying processes and restarts the server.
+this is not part of the cron job because the crontab is run as the root when we sudo su
+most of codeceptions problems comes from chromedriver not talking or responding.
+
+Each test run generates about 50MB of data including backstop images and codeception snapshots. if the system suddenly stop working and restarting does not fix it, it is likely that the azure server has run out of hdd space. 
+When deleting old reports delete the ones in autobots dir as well as the ones in /var/www/html/reports/backstop_data as they are copies
 
 ## Deployment
 
