@@ -23,13 +23,13 @@ On the server,
 
 Install PHP
 
-```
+```bash
 sudo apt install php-pear php-fpm php-dev php-zip php-curl php-gd php-mysql php-xmlrpc php-mbstring php-xml libapache2-mod-php
 ```
 
 Installing Composer
 
-```
+```bash
 sudo apt install composer
 ```
 
@@ -37,24 +37,24 @@ sudo apt install composer
 cd to your desired project directory then
 
 Installing Codeception
-```
+```bash
 composer require codeception/codeception --dev
 ```
 Then run codeception using
-```
+```bash
 php vendor/bin/codecept
 ```
 Boostrap the testing environment using
-```
+```bash
 php vendor/bin/codecept bootstrap
 ```
 Now to make codecept a global command use the following then refresh .bashrc
-```
+```bash
 export PATH=/home/bliu/codecept/vendor/bin:$PATH
 source ~/.bashrc
 ```
 At this point in time if you were to cd to the test suite directory and type
-```
+```bash
 codecept run --steps --html
 ```
 Codeception will technically run but since we do not have chromedriver or selenium set up, it will just return errors
