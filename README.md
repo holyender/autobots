@@ -173,6 +173,11 @@ If tests all pass or if the screenshots are satisfactory, then enter
 ```
 backstop approve
 ```
+
+to not approve all webpages at once but to do it one at a time, use
+```
+backstop approve --filter=<scenariolabelORregex>
+```
 to update the reference snapshots so that it will be the base for next set of tests.
 
 
@@ -217,7 +222,19 @@ then add the command above into the root's crontab
 The cron run script can send an email report to you, edit the email addr in the script file at 
 autobots/scripts/cronRunScript.sh
 
+### cron run script
+the cron job is a one like code that executes this bash script
+this script is the meat of the system that actually runs the test scripts
+first this script makes sure that xvfb, and selenium local server are up and running
+```
+xvfb-run java -Dwebdriver.chrome.driver=/usr/local/bin/chromedriver -jar /usr/local/bin/selenium-server-standalone.jar &
+```
 
+then it runs the codeception test and backstopjs test suites
+
+finally the script copies the codeception test output to the backstop output folder.
+then it renames the backstop folder with a timestamp
+then it moves the whole backstop report folder to the apache2 server at /var/www/html/report
 
 ## PHP Website for Reports
 
