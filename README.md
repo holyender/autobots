@@ -279,8 +279,7 @@ When deleting old reports delete the ones in autobots dir as well as the ones in
 <<<<<<< HEAD
 
 ## Deployment
-=======
->>>>>>> 77bbd0028836e00447bb09b7f928e3e8e445843e
+
 
 
 ## Built With
