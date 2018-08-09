@@ -1,3 +1,0 @@
-import os
-
-os.system("ls backstopjs/backstop_data | grep AR* > reportdirlist")

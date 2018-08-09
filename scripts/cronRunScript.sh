@@ -62,3 +62,4 @@ sudo mv /home/bliu/autobots/backstopjs/backstop_data/html_report /home/bliu/auto
 sudo cp -R /home/bliu/autobots/backstopjs/backstop_data /var/www/html/report
 
 echo "\n mail sent cron run complete"
+
