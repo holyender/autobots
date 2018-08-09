@@ -241,6 +241,16 @@ then it moves the whole backstop report folder to the apache2 server at /var/www
 The website that publishes all the reports is a php page accessible from the server ip
 the report is timestamped and it keeps track of all the reports we have run
 
+## Python scripts
+something not part of the system actively but is part of the repo are the python3 scripts
+these python scripts are to help generate the php or .json files in the actual test configs in backstopjs and codeception. 
+in the pyscripts folder functionFormScraper.py takes either gifturl or inputurl as arguments and outputs txt files that phpTestScriptBuilder.py then uses those files to generate the php code in codeception syntax
+using this code is a very good start when making codecept test cases that fill out forms.
+
+backstoScenarioBuilder.py is used to create the json file used to config backstopjs. 
+this script takes 25mostwanted.txt as arg or any file that are lists or web urls. 
+this generates the backstop json configs and is a good start to getting backstopjs up and running.
+somethings like delay need to be manually configured. also it is a good idea to hide live social media feeds using their element ids.
 
 ## Troubleshooting
 
@@ -276,7 +286,7 @@ most of codeceptions problems comes from chromedriver not talking or responding.
 
 Each test run generates about 50MB of data including backstop images and codeception snapshots. if the system suddenly stop working and restarting does not fix it, it is likely that the azure server has run out of hdd space. 
 When deleting old reports delete the ones in autobots dir as well as the ones in /var/www/html/reports/backstop_data as they are copies
-<<<<<<< HEAD
+
 
 ## Deployment
 
