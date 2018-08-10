@@ -246,6 +246,8 @@ something not part of the system actively but is part of the repo are the python
 these python scripts are to help generate the php or .json files in the actual test configs in backstopjs and codeception. 
 in the pyscripts folder functionFormScraper.py takes either gifturl or inputurl as arguments and outputs txt files that phpTestScriptBuilder.py then uses those files to generate the php code in codeception syntax
 using this code is a very good start when making codecept test cases that fill out forms.
+fucntionFormScraper.py uses python library beautifulsoup4 to scrap the forms on a website.
+its main focus is to scrap the form of the website and get the element IDs of each field or selector or checkbox etc. These IDs are outputted to txt files. these files are then used by phpTestScriptBuilder that only puts these info in codeception syntax.
 
 backstoScenarioBuilder.py is used to create the json file used to config backstopjs. 
 this script takes 25mostwanted.txt as arg or any file that are lists or web urls. 
@@ -290,6 +292,33 @@ When deleting old reports delete the ones in autobots dir as well as the ones in
 
 ## Deployment
 
+## Future/Budget
+
+This system is built on open source projects. Everything from Apache to Codeception to Chromium is all open source and free to use under either MIT license or something equivalent. The only part of the system we currently pay for is Azure cloud from MSFT.  The system server is hosted on Azure cloud and we pay for the processing and storage there. 
+
+Currently there is no foreseeable increase in the spending for this test automation system. 
+All foreseeable expansions in the system capabilities can be done using free and open source software. near future expansions may include adding unit and integration test suites to the existing acceptance test suite. It may also include expanding the system to test multiple websites. This system is equipped to handle multiple websites with additional test suites and slight modification to cron script.
+
+Other expansions of the system may include reintroduction of Jenkins as a build, test, and deployment tool. Dev team may decide to first use Jenkins to build some smaller websites or projects. This is also completely free and open source.
+
+There are options for this project that uses a paid/premium service. These services include enterprise consulting from codeception contributor Sdclabs. Another option include using paid CI/CD services such as circleCI, TravisCI, etc. These services usually offer full end to end service from commiting to version control, to testing, to deploying to prod.
+
+These services are currently not necessary because of the complexity of the system and our set of requirements.
+
+Here are a list of things I actively downloaded and used. 
+
+JDK
+PHP
+Python
+NodeJS
+ChromeDriver
+Webdriver
+Selenium Server
+Codeception
+BackstopJs
+Xvfb
+
+All of the above are free and mostly open source.
 
 
 ## Built With
